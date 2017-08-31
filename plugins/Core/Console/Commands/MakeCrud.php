@@ -3,6 +3,7 @@
 namespace Zix\Core\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
+use Illuminate\Support\Str;
 use Zix\Core\Console\Generators\Traits\StubGeneratorTrait;
 
 class MakeCrud extends GeneratorCommand
@@ -39,7 +40,12 @@ class MakeCrud extends GeneratorCommand
             'name' => $name,
             'module'    => $plugin,
         ]);
-
+        $table = Str::plural(Str::snake(class_basename($name)));
+        $this->call('zix:make-migration', [
+            'name' => "create_{$table}_table",
+            'module'    => $plugin,
+            'create' => $table
+        ]);
         // 2. Generate Seeder
 
         // 3. Generate Factory

@@ -100,6 +100,7 @@ class PluginGenerator extends Generators
     protected function getStubContents($stub)
     {
         $file_path = config('plugins.paths.plugins') . 'Core/Console/Commands/stubs/' . $stub . '.stub';
+//        $this->console->info('==+++>'.$stub);
         if ($this->filesystem->exists($file_path)) { // the stub exists
             return (new Stub(
                 $file_path,

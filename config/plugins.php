@@ -68,9 +68,13 @@ return [
 //            'assets' => 'Resources/assets',
 //            'test' => 'Tests',
             'assets.admin.js' => 'Assets/admin/js',
+            'assets.admin.js.components' => 'Assets/admin/js/components',
+            'assets.admin.js.views' => 'Assets/admin/js/views',
             'assets.admin.style' => 'Assets/admin/stylus',
 
             'assets.default.js' => 'Assets/default/js',
+            'assets.default.js.components' => 'Assets/default/js/components',
+            'assets.default.js.views' => 'Assets/default/js/views',
             'assets.default.style' => 'Assets/default/stylus',
         ],
 
@@ -92,11 +96,13 @@ return [
         'files' => [
             'config' => 'config.json',
 
-            'assets.admin.js' => 'Assets/admin/js/app.js',
-            'assets.admin.style' => 'Assets/admin/stylus/app.styl',
+            'assets/admin/js/app' => 'Assets/admin/js/app.js',
+            'assets/admin/js/routes' => 'Assets/admin/js/routes.js',
+            'assets/admin/stylus/style' => 'Assets/admin/stylus/app.styl',
 
-            'assets.default.js' => 'Assets/default/js/app.js',
-            'assets.default.style' => 'Assets/default/stylus/app.styl',
+            'assets/default/js/app' => 'Assets/default/js/app.js',
+            'assets/default/js/routes' => 'Assets/default/js/routes.js',
+            'assets/default/stylus/style' => 'Assets/default/stylus/app.styl',
 
         ],
         'replacements' => [

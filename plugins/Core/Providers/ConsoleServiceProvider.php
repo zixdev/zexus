@@ -3,6 +3,7 @@
 namespace Zix\Core\Providers;
 
 use Zix\Core\Console\Commands\GenerateSitemap;
+use Zix\Core\Console\Commands\MakeCrud;
 use Zix\Core\Console\Commands\MakeJob;
 use Illuminate\Support\ServiceProvider;
 use Zix\Core\Console\Commands\MakeMail;
@@ -66,7 +67,9 @@ class ConsoleServiceProvider extends ServiceProvider
         GenerateApiDocs::class,
         GenerateSitemap::class,
         // App Admin commands
-        InstallAdminPanelCommand::class
+        InstallAdminPanelCommand::class,
+
+        MakeCrud::class
     ];
 
     /**

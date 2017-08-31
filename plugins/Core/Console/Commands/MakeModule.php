@@ -56,5 +56,17 @@ class MakeModule extends Command
             'module'    => $name,
         ]);
 
+        // Generate Main Model
+        $this->call("zix:make-model", [
+            'name' => $name,
+            'module'    => $name,
+        ]);
+
+        // Generate Main Controller
+        $this->call("zix:make-controller", [
+            'name' => $name."Controller",
+            'module'    => $name,
+        ]);
+
     }
 }

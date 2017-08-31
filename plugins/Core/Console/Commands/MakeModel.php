@@ -43,7 +43,7 @@ class MakeModel extends GeneratorCommand
         $this->generatePath = 'Entities';
         $this->stubPath = "plugins/Core/Console/Commands/stubs/model.stub";
 
-        if (parent::fire() !== false) {
+        if (parent::handle() !== false) {
             if ($this->option('migration') || $this->option('m')) {
                 $table = Str::plural(Str::snake(class_basename($this->argument('name'))));
                 $this->call('zix:make-migration', [

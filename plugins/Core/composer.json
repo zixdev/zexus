@@ -1,0 +1,17 @@
+{
+  "name": "zixdev/zexus-core",
+  "description": "The Laravel Framework.",
+  "keywords": ["framework", "laravel", "zexus", "core"],
+  "license": "MIT",
+  "type": "project",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Barryvdh\\Debugbar\\ServiceProvider"
+      ],
+      "aliases": {
+        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+      }
+    }
+  }
+}

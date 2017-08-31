@@ -39,7 +39,7 @@ class MakeTest extends GeneratorCommand
 		$this->generatePath = 'Tests';
 		$this->stubPath = "plugins/Core/Console/Commands/stubs/test.stub";
 
-		$this->fire();
+        parent::handle();
 	}
 
 }

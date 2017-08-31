@@ -2,24 +2,23 @@
 
 namespace Zix\Core\Console\Generators;
 
-use Illuminate\Filesystem\Filesystem;
 use Zix\Core\Support\Stub;
 
-class ModuleGenerator extends Generators
+class PluginGenerator extends Generators
 {
 
     /**
-     * Generate the module.
+     * Generate the plugin.
      */
     public function generate()
     {
         if (!$this->filesystem->isDirectory(config('plugins.paths.plugins') . $this->getName())) {
             $this->generateFolders()->generateFiles();
 
-            return $this->console->info("Module {$this->getName()} was successfully created !");
+            return $this->console->info("Plugin {$this->getName()} was successfully created !");
         }
 
-        return $this->console->error("Module [{$this->getName()}] already exist!");
+        return $this->console->error("Plugin [{$this->getName()}] already exist!");
     }
 
     /**
@@ -57,12 +56,12 @@ class ModuleGenerator extends Generators
             $this->filesystem->makeDirectory($this->getPath(), 0775, true);
         }
 
-        $this->filesystem->put($this->getPath($namespace.$name).'.php', $this->getStubContents($type));
-        
+        $this->filesystem->put($this->getPath($namespace . $name) . '.php', $this->getStubContents($type));
+
     }
 
     /**
-     * Get new Module Path
+     * Get new Plugin Path
      * @param string $folder
      * @return string
      */
@@ -96,14 +95,17 @@ class ModuleGenerator extends Generators
      *
      * @param $stub
      *
-     * @return Stub
+     * @return string
      */
     protected function getStubContents($stub)
     {
-        return (new Stub(
-            config('plugins.paths.plugins') . 'Core/Console/Commands/stubs/' . $stub . '.stub',
-            $this->getReplacement())
-        )->render();
+        $file_path = config('plugins.paths.plugins') . 'Core/Console/Commands/stubs/' . $stub . '.stub';
+        if ($this->filesystem->exists($file_path)) { // the stub exists
+            return (new Stub(
+                $file_path,
+                $this->getReplacement())
+            )->render();
+        }
     }
 
 

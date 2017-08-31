@@ -39,7 +39,7 @@ class MakeMail extends GeneratorCommand
         $this->generatePath = 'Mail';
         $this->stubPath = "plugins/Core/Console/Commands/stubs/mail.stub";
 
-        $this->fire();
+        parent::handle();
     }
 
 }

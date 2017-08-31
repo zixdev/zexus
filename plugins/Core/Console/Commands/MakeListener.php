@@ -39,7 +39,7 @@ class MakeListener extends GeneratorCommand
 		$this->generatePath = 'Listeners';
 		$this->stubPath = "plugins/Core/Console/Commands/stubs/listener.stub";
 
-		$this->fire();
+        parent::handle();
 	}
 
 }

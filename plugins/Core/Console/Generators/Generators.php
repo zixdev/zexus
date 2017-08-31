@@ -88,6 +88,7 @@ class Generators
     protected function getReplacement()
     {
         $replacements = $this->getConfig('stubs.replacements');
+        $replaces = [];
         foreach ($replacements as $key) {
             if (method_exists($this, $method = 'get' . ucfirst(studly_case(strtolower($key))) . 'Replacement')) {
                 $replaces[$key] = call_user_func([$this, $method]);
@@ -145,7 +146,8 @@ class Generators
      */
     protected function getNamespaceReplacement()
     {
-        return $this->getConfig('namespace') . '\\'  .$this->namespace;
+        return $this->getConfig('namespace') . '\\'  .$this->getName();
+//        return $this->getConfig('namespace') . '\\'  .$this->namespace;
     }
 
     /**
@@ -155,7 +157,8 @@ class Generators
      */
     protected function getClassReplacement()
     {
-        return $this->console->argument('className');
+        return $this->getName();
+//        return $this->console->argument('className');
     }
 
     /**

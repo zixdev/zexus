@@ -3,7 +3,7 @@
 namespace Zix\Core\Console\Commands;
 
 use Illuminate\Console\Command;
-use Zix\Core\Console\Generators\ModuleGenerator;
+use Zix\Core\Console\Generators\PluginGenerator;
 
 class MakeModule extends Command
 {
@@ -23,15 +23,15 @@ class MakeModule extends Command
     protected $description = 'Create a new Module.';
 
     /**
-     * @var ModuleGenerator
+     * @var PluginGenerator
      */
     private $moduleGenerator;
 
     /**
      * Create a new command instance.
-     * @param ModuleGenerator $moduleGenerator
+     * @param PluginGenerator $moduleGenerator
      */
-    public function __construct(ModuleGenerator $moduleGenerator)
+    public function __construct(PluginGenerator $moduleGenerator)
     {
         parent::__construct();
         $this->moduleGenerator = $moduleGenerator;
@@ -44,10 +44,17 @@ class MakeModule extends Command
      */
     public function handle()
     {
-
+        $name = $this->argument('name');
         $this->moduleGenerator
             ->setConsole($this)
             ->generate();
+
+
+        // Generate Main Provider
+        $this->call("zix:make-provider", [
+            'name' => "{$name}ServiceProvider",
+            'module'    => $name,
+        ]);
 
     }
 }

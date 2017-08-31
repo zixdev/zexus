@@ -39,7 +39,7 @@ class MakeController extends GeneratorCommand
         $this->generatePath = 'Http/Controllers';
         $this->stubPath = 'plugins/Core/Console/Commands/stubs/controller.stub';
 
-        $this->fire();
+        parent::handle();
     }
 
 }

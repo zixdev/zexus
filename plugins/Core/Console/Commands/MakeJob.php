@@ -39,7 +39,7 @@ class MakeJob extends GeneratorCommand
         $this->generatePath = 'Jobs';
         $this->stubPath = "plugins/Core/Console/Commands/stubs/job.stub";
 
-        $this->fire();
+        parent::handle();
     }
 
 

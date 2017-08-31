@@ -39,7 +39,7 @@ class MakeNotification extends GeneratorCommand
 		$this->generatePath = 'Notifications';
 		$this->stubPath = "plugins/Core/Console/Commands/stubs/notification.stub";
 
-		$this->fire();
+        parent::handle();
 	}
 
 }

@@ -39,7 +39,7 @@ class MakeMiddleware extends GeneratorCommand
         $this->generatePath = 'Http/Middleware';
         $this->stubPath = "plugins/Core/Console/Commands/stubs/middleware.stub";
 
-        $this->fire();
+        parent::handle();
     }
 
 }

@@ -39,7 +39,7 @@ class MakeRequest extends GeneratorCommand
 		$this->generatePath = 'Http/Requests';
 		$this->stubPath = "plugins/Core/Console/Commands/stubs/request.stub";
 
-		$this->fire();
+        parent::handle();
 	}
 
 }

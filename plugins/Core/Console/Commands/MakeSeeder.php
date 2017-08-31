@@ -39,7 +39,7 @@ class MakeSeeder extends GeneratorCommand
 		$this->generatePath = 'Database/Seeds';
 		$this->stubPath = "plugins/Core/Console/Commands/stubs/seeder.stub";
 
-		$this->fire();
+        parent::handle();
 	}
 
 }

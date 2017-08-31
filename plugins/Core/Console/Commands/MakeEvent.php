@@ -39,6 +39,6 @@ class MakeEvent extends GeneratorCommand
 		$this->stubPath = "plugins/Core/Console/Commands/stubs/event.stub";
 		$this->generatePath = 'Events';
 
-		$this->fire();
+        parent::handle();
 	}
 }

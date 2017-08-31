@@ -37,6 +37,6 @@ class MakeCommand extends GeneratorCommand
         $this->generatePath = 'Console/Commands';
         $this->stubPath = 'plugins/Core/Console/Commands/stubs/command.stub';
 
-        $this->fire();
+        parent::handle();
     }
 }

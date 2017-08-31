@@ -40,6 +40,6 @@ class MakeProvider extends GeneratorCommand
         $this->generatePath = 'Providers';
         $this->stubPath = 'plugins/Core/Console/Commands/stubs/provider.stub';
 
-        $this->fire();
+        parent::handle();
     }
 }

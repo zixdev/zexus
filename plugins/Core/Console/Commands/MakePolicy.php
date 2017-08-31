@@ -39,7 +39,7 @@ class MakePolicy extends GeneratorCommand
         $this->generatePath = 'Policies';
         $this->stubPath = "plugins/Core/Console/Commands/stubs/policy.stub";
 
-        $this->fire();
+        parent::handle();
     }
 
 }

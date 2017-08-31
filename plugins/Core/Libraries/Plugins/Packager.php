@@ -6,7 +6,7 @@ use Zix\Core\Libraries\Plugins\Contracts\PackagerInterface;
 
 /**
  * Class Packager
- * @package Zix\Core\Libraries\Modules\Helpers
+ * @package Zix\Core\Libraries\plugins\Helpers
  */
 class Packager implements PackagerInterface
 {

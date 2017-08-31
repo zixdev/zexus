@@ -20,15 +20,15 @@ class PluginsServiceProvider extends ServiceProvider
         $this->app->singleton('plugins', function ($app) {
             return new Plugins($app['filesystem']);
         });
-        $this->registerModulesProviders();
+        $this->registerpluginsProviders();
         $this->bindContracts();
 
     }
 
     /**
-     * Register All Enabled Modules Providers.
+     * Register All Enabled plugins Providers.
      */
-    public function registerModulesProviders()
+    public function registerpluginsProviders()
     {
         $this->app['plugins']->all()->map(function ($package) {
             if ($package->enabled()) {
@@ -40,7 +40,7 @@ class PluginsServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bind Modules Contracts
+     * Bind plugins Contracts
      */
     public function bindContracts()
     {

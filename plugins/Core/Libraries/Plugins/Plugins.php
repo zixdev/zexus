@@ -36,25 +36,25 @@ class Plugins
     }
 
     /**
-     * Get All Modules.
+     * Get All plugins.
      * @return array
      */
     public function all()
     {
-        $modules = [];
+        $plugins = [];
 
         foreach($this->scan() as $key => $module) {
             $package = new Packager($this->file);
-            $modules[$package->set($module)->name()] = $package->set($module);
+            $plugins[$package->set($module)->name()] = $package->set($module);
         }
 
-        return collect(array_sort($modules, function($module) {
+        return collect(array_sort($plugins, function($module) {
             return $module->config()->order;
         }));
     }
 
     /**
-     * Get All Modules.
+     * Get All plugins.
      * @return array
      */
     public function scan()

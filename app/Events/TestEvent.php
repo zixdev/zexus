@@ -1,7 +1,8 @@
 <?php
 
-namespace DummyNamespace;
+namespace App\Events;
 
+use App\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
@@ -10,17 +11,26 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class DummyClass // implements ShouldBroadcast
+/**
+ * Class TestEvent
+ * @package App\Events
+ */
+class TestEvent // implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+    /**
+     * @var User
+     */
+    public $model;
 
-
-    public function __construct()
+    /**
+     * Create a new event instance.
+     * @param User $model
+     */
+    public function __construct(User $model)
     {
-
+        $this->model = $model;
     }
-    }
-
 
     /**
      * Get the channels the event should broadcast on.

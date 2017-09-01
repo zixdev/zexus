@@ -1,6 +1,6 @@
 <?php
 
-namespace Zix\Core\Console\Commands;
+namespace Zix\Core\Console\Commands\Crud;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
@@ -75,13 +75,15 @@ class MakeCrud extends GeneratorCommand
         // 6. Generate Route Permission Seeder & seed
 
         // 7. Generate Events
-        $this->call("zix:make-event", [
+        $this->call("crud:make-event", [
             'name' => $name.'/'.$name."CreatedEvent",
             'module'    => $plugin,
+            'model'    => $name,
         ]);
-        $this->call("zix:make-event", [
+        $this->call("crud:make-event", [
             'name' => $name.'/'.$name."UpdatedEvent",
             'module'    => $plugin,
+            'model'    => $name,
         ]);
 
         // 8. Generate Listeners

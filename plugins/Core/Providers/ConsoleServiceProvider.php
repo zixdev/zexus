@@ -4,6 +4,7 @@ namespace Zix\Core\Providers;
 
 use Zix\Core\Console\Commands\GenerateSitemap;
 use Zix\Core\Console\Commands\MakeCrud;
+use Zix\Core\Console\Commands\MakeCrudController;
 use Zix\Core\Console\Commands\MakeJob;
 use Illuminate\Support\ServiceProvider;
 use Zix\Core\Console\Commands\MakeMail;
@@ -45,6 +46,7 @@ class ConsoleServiceProvider extends ServiceProvider
         MakeModule::class,
         MakeCommand::class,
         MakeController::class,
+        MakeCrudController::class,
         MakeProvider::class,
         MakeEvent::class,
         MakeJob::class,

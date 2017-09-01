@@ -46,14 +46,20 @@ class MakeCrud extends GeneratorCommand
             'module'    => $plugin,
             'create' => $table
         ]);
+
         // 2. Generate Seeder
+        $this->call("zix:make-seeder", [
+            'name' => $name."TableSeeder",
+            'module'    => $plugin,
+        ]);
 
         // 3. Generate Factory
 
         // 4. Generate Controller + (Request "create/update")
-        $this->call("zix:make-controller", [
+        $this->call("crud:make-controller", [
             'name' => $name."Controller",
             'module'    => $plugin,
+            'model'    => $name,
         ]);
         $this->call("zix:make-request", [
             'name' => $name.'/'.$name."CreateRequest",
@@ -70,11 +76,11 @@ class MakeCrud extends GeneratorCommand
 
         // 7. Generate Events
         $this->call("zix:make-event", [
-            'name' => $name.'/'.$name."CreateEvent",
+            'name' => $name.'/'.$name."CreatedEvent",
             'module'    => $plugin,
         ]);
         $this->call("zix:make-event", [
-            'name' => $name.'/'.$name."UpdateEvent",
+            'name' => $name.'/'.$name."UpdatedEvent",
             'module'    => $plugin,
         ]);
 

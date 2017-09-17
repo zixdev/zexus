@@ -12,6 +12,6 @@
 */
 
 Route::get('/', function () {
-    return dd(Plugins::enabledPlugins());
-//    return view('welcome');
+//    return dd(Plugins::enabledPlugins());
+    return view('tmp-admin');
 });

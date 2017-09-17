@@ -12,6 +12,6 @@
 */
 
 Route::get('/', function () {
-    return dd(Plugins::config());
+    return dd(Plugins::enabledPlugins());
 //    return view('welcome');
 });

@@ -79,7 +79,7 @@ class Packager implements PackagerInterface
      */
     public function enabled()
     {
-        return $this->config()->enable;
+        return property_exists(\Plugins::plugins(), $this->name()) ? \Plugins::plugins()->{$this->name()}->status : false;
     }
 
     /**

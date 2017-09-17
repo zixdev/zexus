@@ -1,1 +1,1 @@
-{"Blog":{"name":"Blog","version":"0.0.1","status":true},"Core":{"name":"Core","version":"0.0.1","status":true}}
+{"Blog":{"name":"Blog","version":"0.0.1","status":false},"Cart":{"name":"Cart","version":"0.0.1","status":true},"Core":{"name":"Core","version":"0.0.1","status":false}}

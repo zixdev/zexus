@@ -20,7 +20,7 @@ class PluginsServiceProvider extends ServiceProvider
         $this->app->singleton('plugins', function ($app) {
             return new Plugins($app['filesystem']);
         });
-        $this->registerpluginsProviders();
+        $this->registerPluginsProviders();
         $this->bindContracts();
 
     }
@@ -28,14 +28,12 @@ class PluginsServiceProvider extends ServiceProvider
     /**
      * Register All Enabled plugins Providers.
      */
-    public function registerpluginsProviders()
+    public function registerPluginsProviders()
     {
-        $this->app['plugins']->all()->map(function ($package) {
-            if ($package->enabled()) {
-                $this->registerProviders($package->providers());
-                $this->registerAlias($package->aliases());
-                $this->requiredFiles($package->config()->files, $package->name());
-            }
+        $this->app['plugins']->enabledPlugins()->map(function ($package) {
+            $this->registerProviders($package->providers());
+            $this->registerAlias($package->aliases());
+            $this->requiredFiles($package->config()->files, $package->name());
         });
     }
 

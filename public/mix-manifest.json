@@ -1,4 +1,9 @@
 {
+    "/advanced-bundle.js": "/advanced-bundle.js",
+    "/base-bundle.js": "/base-bundle.js",
+    "/appearance-bundle.js": "/appearance-bundle.js",
+    "/accounts-bundle.js": "/accounts-bundle.js",
+    "/pages-bundle.js": "/pages-bundle.js",
     "/js/admin.js": "/js/admin.js",
     "/css/app.css": "/css/app.css"
 }

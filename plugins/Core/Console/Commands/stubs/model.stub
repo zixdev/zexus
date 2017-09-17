@@ -4,7 +4,14 @@ namespace DummyNamespace;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class DummyClass
+ * @package DummyNamespace
+ */
 class DummyClass extends Model
 {
-    //
+    /**
+     * @var array
+     */
+    protected $fillable = [];
 }

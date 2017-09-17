@@ -3,6 +3,10 @@
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Filesystem\FilesystemManager;
 
+/**
+ * Class Plugins
+ * @package Zix\Core\Libraries\Plugins
+ */
 class Plugins
 {
     /**
@@ -60,5 +64,38 @@ class Plugins
     public function scan()
     {
         return $this->file->directories('plugins');
+    }
+
+    /**
+     * @return mixed
+     */
+    public function config()
+    {
+        $file = $this->file->get('plugins/plugins.json');
+        return json_decode($file);
+    }
+
+    public function install()
+    {
+        // 1. check if plugins [] is empty and there no db installed => ? true : false
+        if(!count($this->config())) {
+            $this->file->put('plugins/plugins.json', json_encode($this->all()->map(function($plugin) {
+                return [
+                    "name" => $plugin->config()->name,
+                    "version" => $plugin->config()->version,
+                    "status" => true
+                ];
+            })));
+
+
+            // install the packages
+        }
+        dd("packages installed");
+        return false;
+    }
+
+    public function update()
+    {
+        
     }
 }

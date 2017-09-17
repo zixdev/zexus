@@ -32,32 +32,33 @@ class InstallCommand extends BaseCommand
      */
     public function handle()
     {
-        // put the app in maintenance mode
-        $this->call('down');
-
-        // clean cache
-        $this->call('cache:clear');
-
-        // generate app key
-        $this->call('key:generate');
-
-        // migrate database
-        $this->call('zix:migrate');
-        $this->call('migrate');
-
-        // migrate|install passport
-        $this->call('passport:install');
-
-        // seed database
-        $this->call('zix:db-seed');
-
-        // create admin account
-        $this->call('zix:install-admin');
-
-        // set the first site up
-
-        // put the app in live mode
-        $this->call('up');
+        \Plugins::install();
+//        // put the app in maintenance mode
+//        $this->call('down');
+//
+//        // clean cache
+//        $this->call('cache:clear');
+//
+//        // generate app key
+//        $this->call('key:generate');
+//
+//        // migrate database
+//        $this->call('zix:migrate');
+//        $this->call('migrate');
+//
+//        // migrate|install passport
+//        $this->call('passport:install');
+//
+//        // seed database
+//        $this->call('zix:db-seed');
+//
+//        // create admin account
+//        $this->call('zix:install-admin');
+//
+//        // set the first site up
+//
+//        // put the app in live mode
+//        $this->call('up');
 
     }
 

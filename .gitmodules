@@ -1,0 +1,3 @@
+[submodule "plugins/Core"]
+	path = plugins/Core
+	url = git@github.com:zixdev/zexus-core.git

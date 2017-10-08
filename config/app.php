@@ -178,6 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         Zix\Core\Libraries\Plugins\PluginsServiceProvider::class,
 
+        Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
+
     ],
 
     /*

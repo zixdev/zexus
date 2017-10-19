@@ -1,106 +1,32 @@
 webpackJsonp([4],{
 
-/***/ 100:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var Component = __webpack_require__(15)(
-  /* script */
-  __webpack_require__(138),
-  /* template */
-  __webpack_require__(139),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "/home/badi/Desktop/Zix_Development/NE>/laravel/plugins/Core/Assets/admin/js/core/+pages/components/all.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] all.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7e17bf56", Component.options)
-  } else {
-    hotAPI.reload("data-v-7e17bf56", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 101:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var Component = __webpack_require__(15)(
-  /* script */
-  __webpack_require__(140),
-  /* template */
-  __webpack_require__(141),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "/home/badi/Desktop/Zix_Development/NE>/laravel/plugins/Core/Assets/admin/js/core/+pages/components/create.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] create.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-49bf3378", Component.options)
-  } else {
-    hotAPI.reload("data-v-49bf3378", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
 /***/ 102:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(15)(
-  /* script */
-  __webpack_require__(142),
-  /* template */
-  __webpack_require__(143),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
+var normalizeComponent = __webpack_require__(16)
+/* script */
+var __vue_script__ = __webpack_require__(140)
+/* template */
+var __vue_template__ = __webpack_require__(141)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
 )
-Component.options.__file = "/home/badi/Desktop/Zix_Development/NE>/laravel/plugins/Core/Assets/admin/js/core/+pages/components/view.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] view.vue: functional components are not supported with templates, they should use render functions.")}
+Component.options.__file = "plugins/Core/Assets/admin/js/core/+pages/components/all.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -109,10 +35,10 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3c47f9a1", Component.options)
+    hotAPI.createRecord("data-v-9f126400", Component.options)
   } else {
-    hotAPI.reload("data-v-3c47f9a1", Component.options)
-  }
+    hotAPI.reload("data-v-9f126400", Component.options)
+' + '  }
   module.hot.dispose(function (data) {
     disposed = true
   })
@@ -123,7 +49,105 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 118:
+/***/ 103:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(16)
+/* script */
+var __vue_script__ = __webpack_require__(142)
+/* template */
+var __vue_template__ = __webpack_require__(143)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "plugins/Core/Assets/admin/js/core/+pages/components/create.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-61ef21ed", Component.options)
+  } else {
+    hotAPI.reload("data-v-61ef21ed", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 104:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(16)
+/* script */
+var __vue_script__ = __webpack_require__(144)
+/* template */
+var __vue_template__ = __webpack_require__(145)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "plugins/Core/Assets/admin/js/core/+pages/components/view.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3d1b0156", Component.options)
+  } else {
+    hotAPI.reload("data-v-3d1b0156", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 120:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -333,7 +357,7 @@ exports.isBuffer = function isBuffer(obj) {
 
 /***/ }),
 
-/***/ 119:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -359,7 +383,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 120:
+/***/ 122:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -376,11 +400,11 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _qs = __webpack_require__(121);
+var _qs = __webpack_require__(123);
 
 var _qs2 = _interopRequireDefault(_qs);
 
-var _tableSettings = __webpack_require__(124);
+var _tableSettings = __webpack_require__(126);
 
 var _tableSettings2 = _interopRequireDefault(_tableSettings);
 
@@ -567,15 +591,15 @@ exports.default = DataTables;
 
 /***/ }),
 
-/***/ 121:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var stringify = __webpack_require__(122);
-var parse = __webpack_require__(123);
-var formats = __webpack_require__(119);
+var stringify = __webpack_require__(124);
+var parse = __webpack_require__(125);
+var formats = __webpack_require__(121);
 
 module.exports = {
     formats: formats,
@@ -586,14 +610,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 122:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(118);
-var formats = __webpack_require__(119);
+var utils = __webpack_require__(120);
+var formats = __webpack_require__(121);
 
 var arrayPrefixGenerators = {
     brackets: function brackets(prefix) { // eslint-disable-line func-name-matching
@@ -804,13 +828,13 @@ module.exports = function (object, opts) {
 
 /***/ }),
 
-/***/ 123:
+/***/ 125:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var utils = __webpack_require__(118);
+var utils = __webpack_require__(120);
 
 var has = Object.prototype.hasOwnProperty;
 
@@ -986,25 +1010,33 @@ module.exports = function (str, opts) {
 
 /***/ }),
 
-/***/ 124:
+/***/ 126:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var Component = __webpack_require__(15)(
-  /* script */
-  __webpack_require__(125),
-  /* template */
-  __webpack_require__(126),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
+var normalizeComponent = __webpack_require__(16)
+/* script */
+var __vue_script__ = __webpack_require__(127)
+/* template */
+var __vue_template__ = __webpack_require__(128)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
 )
-Component.options.__file = "/home/badi/Desktop/Zix_Development/NE>/laravel/plugins/Core/Assets/admin/js/libraries/tablage/table-settings.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] table-settings.vue: functional components are not supported with templates, they should use render functions.")}
+Component.options.__file = "plugins/Core/Assets/admin/js/libraries/tablage/table-settings.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -1013,10 +1045,10 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-61a13fc6", Component.options)
+    hotAPI.createRecord("data-v-1377c131", Component.options)
   } else {
-    hotAPI.reload("data-v-61a13fc6", Component.options)
-  }
+    hotAPI.reload("data-v-1377c131", Component.options)
+' + '  }
   module.hot.dispose(function (data) {
     disposed = true
   })
@@ -1027,7 +1059,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 125:
+/***/ 127:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1096,7 +1128,7 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueClassComponent = __webpack_require__(16);
+var _vueClassComponent = __webpack_require__(17);
 
 var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
 
@@ -1161,136 +1193,218 @@ exports.default = TableSettings;
 
 /***/ }),
 
-/***/ 126:
+/***/ 128:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('v-dialog', {
-    attrs: {
-      "fullscreen": "",
-      "transition": "v-dialog-bottom-transition",
-      "overlay": false
-    },
-    model: {
-      value: (_vm.dialog),
-      callback: function($$v) {
-        _vm.dialog = $$v
-      },
-      expression: "dialog"
-    }
-  }, [_c('v-btn', {
-    attrs: {
-      "flat": "",
-      "primary": "",
-      "light": ""
-    },
-    slot: "activator"
-  }, [_c('v-icon', {
-    attrs: {
-      "dark": ""
-    }
-  }, [_vm._v("settings")])], 1), _vm._v(" "), _c('v-card', [_c('v-card-row', [_c('v-toolbar', [_c('v-btn', {
-    attrs: {
-      "icon": "icon",
-      "block": "",
-      "light": ""
-    },
-    nativeOn: {
-      "click": function($event) {
-        _vm.dialog = false
-      }
-    }
-  }, [_c('v-icon', [_vm._v("close")])], 1), _vm._v(" "), _c('v-toolbar-title', [_c('span', {
-    staticClass: "capitalize-text"
-  }, [_vm._v(_vm._s(_vm.name))]), _vm._v(" Table Settings")]), _vm._v(" "), _c('v-btn', {
-    attrs: {
-      "light": "",
-      "flat": ""
-    },
-    nativeOn: {
-      "click": function($event) {
-        _vm.save()
-      }
-    }
-  }, [_vm._v("Save")])], 1)], 1), _vm._v(" "), _c('v-card-text', [_c('v-list', {
-    attrs: {
-      "three-line": "",
-      "subheader": ""
-    }
-  }, [_c('v-subheader', [_vm._v("Columns")]), _vm._v(" "), _c('div', {
-    staticClass: "dd"
-  }, [_c('ol', {
-    staticClass: "dd-list"
-  }, _vm._l((_vm.columns), function(column, key) {
-    return _c('li', {
-      key: key,
-      staticClass: "dd-item",
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-dialog",
+    {
       attrs: {
-        "data-searchable": column.searchable,
-        "data-sortable": column.sortable,
-        "data-left": column.left,
-        "data-value": column.value,
-        "data-text": column.text
-      }
-    }, [_c('div', {
-      staticClass: "dd-handle"
-    }, [_c('v-layout', [_c('v-flex', {
-      attrs: {
-        "sm6": ""
-      }
-    }, [_vm._v("\n                                        " + _vm._s(column.text) + "\n                                    ")]), _vm._v(" "), _c('v-flex', {
-      attrs: {
-        "sm6": ""
-      }
-    }, [_c('div', {
-      staticClass: "dd-nodrag"
-    }, [_c('v-switch', {
-      attrs: {
-        "label": "Sortable"
+        fullscreen: "",
+        transition: "v-dialog-bottom-transition",
+        overlay: false
       },
       model: {
-        value: (column.sortable),
+        value: _vm.dialog,
         callback: function($$v) {
-          column.sortable = $$v
+          _vm.dialog = $$v
         },
-        expression: "column.sortable"
+        expression: "dialog"
       }
-    }), _vm._v(" "), _c('v-switch', {
-      attrs: {
-        "label": "Searchable"
-      },
-      model: {
-        value: (column.searchable),
-        callback: function($$v) {
-          column.searchable = $$v
+    },
+    [
+      _c(
+        "v-btn",
+        {
+          attrs: { slot: "activator", flat: "", primary: "", light: "" },
+          slot: "activator"
         },
-        expression: "column.searchable"
-      }
-    }), _vm._v(" "), _c('v-switch', {
-      attrs: {
-        "label": "Left"
-      },
-      model: {
-        value: (column.left),
-        callback: function($$v) {
-          column.left = $$v
-        },
-        expression: "column.left"
-      }
-    })], 1)])], 1)], 1)])
-  }))])], 1)], 1)], 1)], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+        [_c("v-icon", { attrs: { dark: "" } }, [_vm._v("settings")])],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-card",
+        [
+          _c(
+            "v-card-row",
+            [
+              _c(
+                "v-toolbar",
+                [
+                  _c(
+                    "v-btn",
+                    {
+                      attrs: { icon: "icon", block: "", light: "" },
+                      nativeOn: {
+                        click: function($event) {
+                          _vm.dialog = false
+                        }
+                      }
+                    },
+                    [_c("v-icon", [_vm._v("close")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("v-toolbar-title", [
+                    _c("span", { staticClass: "capitalize-text" }, [
+                      _vm._v(_vm._s(_vm.name))
+                    ]),
+                    _vm._v(" Table Settings")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "v-btn",
+                    {
+                      attrs: { light: "", flat: "" },
+                      nativeOn: {
+                        click: function($event) {
+                          _vm.save()
+                        }
+                      }
+                    },
+                    [_vm._v("Save")]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-card-text",
+            [
+              _c(
+                "v-list",
+                { attrs: { "three-line": "", subheader: "" } },
+                [
+                  _c("v-subheader", [_vm._v("Columns")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "dd" }, [
+                    _c(
+                      "ol",
+                      { staticClass: "dd-list" },
+                      _vm._l(_vm.columns, function(column, key) {
+                        return _c(
+                          "li",
+                          {
+                            key: key,
+                            staticClass: "dd-item",
+                            attrs: {
+                              "data-searchable": column.searchable,
+                              "data-sortable": column.sortable,
+                              "data-left": column.left,
+                              "data-value": column.value,
+                              "data-text": column.text
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "dd-handle" },
+                              [
+                                _c(
+                                  "v-layout",
+                                  [
+                                    _c("v-flex", { attrs: { sm6: "" } }, [
+                                      _vm._v(
+                                        "\n                                        " +
+                                          _vm._s(column.text) +
+                                          "\n                                    "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("v-flex", { attrs: { sm6: "" } }, [
+                                      _c(
+                                        "div",
+                                        { staticClass: "dd-nodrag" },
+                                        [
+                                          _c("v-switch", {
+                                            attrs: { label: "Sortable" },
+                                            model: {
+                                              value: column.sortable,
+                                              callback: function($$v) {
+                                                _vm.$set(
+                                                  column,
+                                                  "sortable",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "column.sortable"
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: { label: "Searchable" },
+                                            model: {
+                                              value: column.searchable,
+                                              callback: function($$v) {
+                                                _vm.$set(
+                                                  column,
+                                                  "searchable",
+                                                  $$v
+                                                )
+                                              },
+                                              expression: "column.searchable"
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          _c("v-switch", {
+                                            attrs: { label: "Left" },
+                                            model: {
+                                              value: column.left,
+                                              callback: function($$v) {
+                                                _vm.$set(column, "left", $$v)
+                                              },
+                                              expression: "column.left"
+                                            }
+                                          })
+                                        ],
+                                        1
+                                      )
+                                    ])
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        )
+                      })
+                    )
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-61a13fc6", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1377c131", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 138:
+/***/ 140:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1365,11 +1479,11 @@ var _class; //
 //
 //
 
-var _vueClassComponent = __webpack_require__(16);
+var _vueClassComponent = __webpack_require__(17);
 
 var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
 
-var _tablage = __webpack_require__(120);
+var _tablage = __webpack_require__(122);
 
 var _tablage2 = _interopRequireDefault(_tablage);
 
@@ -1404,164 +1518,248 @@ exports.default = AllPages;
 
 /***/ }),
 
-/***/ 139:
+/***/ 141:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('v-card', [_c('v-card-title', [_vm._v("\n        " + _vm._s(_vm.$t('pages.index_title')) + "\n    ")]), _vm._v(" "), _c('v-app-bar', [_c('data-table-settings', {
-    staticClass: "hidden-sm-and-down",
-    attrs: {
-      "name": "pages",
-      "columns": _vm.headers
-    },
-    on: {
-      "update:columns": function($event) {
-        _vm.headers = $event
-      }
-    }
-  }), _vm._v(" "), _c('v-select', {
-    staticClass: "hidden-sm-and-down",
-    attrs: {
-      "items": _vm.eloquent,
-      "label": _vm.$t('table.filter-data')
-    },
-    model: {
-      value: (_vm.eloquent_status),
-      callback: function($$v) {
-        _vm.eloquent_status = $$v
-      },
-      expression: "eloquent_status"
-    }
-  }), _vm._v(" "), _c('v-spacer', {
-    staticClass: "hidden-sm-and-down"
-  }), _vm._v(" "), _c('v-text-field', {
-    attrs: {
-      "append-icon": "search",
-      "label": _vm.$t('table.search'),
-      "single-line": "",
-      "hide-details": ""
-    },
-    model: {
-      value: (_vm.search),
-      callback: function($$v) {
-        _vm.search = $$v
-      },
-      expression: "search"
-    }
-  })], 1), _vm._v(" "), _c('v-data-table', {
-    staticClass: "elevation-1",
-    attrs: {
-      "headers": _vm.headers,
-      "items": _vm.items,
-      "search": _vm.search,
-      "pagination": _vm.pagination,
-      "total-items": _vm.totalItems,
-      "loading": _vm.loading
-    },
-    on: {
-      "update:pagination": function($event) {
-        _vm.pagination = $event
-      }
-    },
-    scopedSlots: _vm._u([{
-      key: "items",
-      fn: function(props) {
-        return [_vm._l((_vm.headers), function(header) {
-          return _c('td', {
-            class: {
-              'text-xs-right': !header.left
-            }
-          }, [_vm._v(_vm._s(props.item[header.value]))])
-        }), _vm._v(" "), (_vm.eloquent_status == 'active') ? _c('td', [_c('v-btn', {
-          attrs: {
-            "small": "",
-            "dark": "",
-            "default": "",
-            "outline": "",
-            "router": "",
-            "to": {
-              name: 'pages.edit',
-              params: {
-                id: props.item.id
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-card",
+    [
+      _c("v-card-title", [
+        _vm._v("\n        " + _vm._s(_vm.$t("pages.index_title")) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c(
+        "v-app-bar",
+        [
+          _c("data-table-settings", {
+            staticClass: "hidden-sm-and-down",
+            attrs: { name: "pages", columns: _vm.headers },
+            on: {
+              "update:columns": function($event) {
+                _vm.headers = $event
               }
             }
+          }),
+          _vm._v(" "),
+          _c("v-select", {
+            staticClass: "hidden-sm-and-down",
+            attrs: { items: _vm.eloquent, label: _vm.$t("table.filter-data") },
+            model: {
+              value: _vm.eloquent_status,
+              callback: function($$v) {
+                _vm.eloquent_status = $$v
+              },
+              expression: "eloquent_status"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-spacer", { staticClass: "hidden-sm-and-down" }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              "append-icon": "search",
+              label: _vm.$t("table.search"),
+              "single-line": "",
+              "hide-details": ""
+            },
+            model: {
+              value: _vm.search,
+              callback: function($$v) {
+                _vm.search = $$v
+              },
+              expression: "search"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("v-data-table", {
+        staticClass: "elevation-1",
+        attrs: {
+          headers: _vm.headers,
+          items: _vm.items,
+          search: _vm.search,
+          pagination: _vm.pagination,
+          "total-items": _vm.totalItems,
+          loading: _vm.loading
+        },
+        on: {
+          "update:pagination": function($event) {
+            _vm.pagination = $event
           }
-        }, [_vm._v("\n                    " + _vm._s(_vm.$t('table.edit')) + "\n                ")]), _vm._v(" "), _c('v-btn', {
-          attrs: {
-            "small": "",
-            "dark": "",
-            "default": "",
-            "outline": ""
-          },
-          nativeOn: {
-            "click": function($event) {
-              _vm.deleteData(props.item.id)
+        },
+        scopedSlots: _vm._u([
+          {
+            key: "items",
+            fn: function(props) {
+              return [
+                _vm._l(_vm.headers, function(header) {
+                  return _c(
+                    "td",
+                    { class: { "text-xs-right": !header.left } },
+                    [_vm._v(_vm._s(props.item[header.value]))]
+                  )
+                }),
+                _vm._v(" "),
+                _vm.eloquent_status == "active"
+                  ? _c(
+                      "td",
+                      [
+                        _c(
+                          "v-btn",
+                          {
+                            attrs: {
+                              small: "",
+                              dark: "",
+                              default: "",
+                              outline: "",
+                              router: "",
+                              to: {
+                                name: "pages.edit",
+                                params: { id: props.item.id }
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                    " +
+                                _vm._s(_vm.$t("table.edit")) +
+                                "\n                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-btn",
+                          {
+                            attrs: {
+                              small: "",
+                              dark: "",
+                              default: "",
+                              outline: ""
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                _vm.deleteData(props.item.id)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                    " +
+                                _vm._s(_vm.$t("table.delete")) +
+                                "\n                "
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  : _c(
+                      "td",
+                      [
+                        _c(
+                          "v-btn",
+                          {
+                            attrs: {
+                              small: "",
+                              dark: "",
+                              error: "",
+                              outline: ""
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                _vm.forceDeleteData(props.item.id)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                    " +
+                                _vm._s(_vm.$t("table.force-delete")) +
+                                "\n                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-btn",
+                          {
+                            attrs: {
+                              small: "",
+                              dark: "",
+                              default: "",
+                              outline: ""
+                            },
+                            nativeOn: {
+                              click: function($event) {
+                                _vm.restoreData(props.item.id)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                    " +
+                                _vm._s(_vm.$t("table.restore")) +
+                                "\n                "
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+              ]
             }
           }
-        }, [_vm._v("\n                    " + _vm._s(_vm.$t('table.delete')) + "\n                ")])], 1) : _c('td', [_c('v-btn', {
-          attrs: {
-            "small": "",
-            "dark": "",
-            "error": "",
-            "outline": ""
-          },
-          nativeOn: {
-            "click": function($event) {
-              _vm.forceDeleteData(props.item.id)
-            }
-          }
-        }, [_vm._v("\n                    " + _vm._s(_vm.$t('table.force-delete')) + "\n                ")]), _vm._v(" "), _c('v-btn', {
-          attrs: {
-            "small": "",
-            "dark": "",
-            "default": "",
-            "outline": ""
-          },
-          nativeOn: {
-            "click": function($event) {
-              _vm.restoreData(props.item.id)
-            }
-          }
-        }, [_vm._v("\n                    " + _vm._s(_vm.$t('table.restore')) + "\n                ")])], 1)]
-      }
-    }])
-  }), _vm._v(" "), _c('v-btn', {
-    directives: [{
-      name: "tooltip",
-      rawName: "v-tooltip:left",
-      value: ({
-        html: _vm.$t('pages.add')
+        ])
       }),
-      expression: "{html: $t('pages.add')}",
-      arg: "left"
-    }],
-    staticClass: "btn--add",
-    attrs: {
-      "dark": "",
-      "primary": "",
-      "floating": "",
-      "router": "",
-      "to": {
-        name: 'pages.add'
-      }
-    }
-  }, [_c('v-icon', {
-    attrs: {
-      "light": ""
-    }
-  }, [_vm._v("add")])], 1)], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+      _vm._v(" "),
+      _c(
+        "v-btn",
+        {
+          directives: [
+            {
+              name: "tooltip",
+              rawName: "v-tooltip:left",
+              value: { html: _vm.$t("pages.add") },
+              expression: "{html: $t('pages.add')}",
+              arg: "left"
+            }
+          ],
+          staticClass: "btn--add",
+          attrs: {
+            dark: "",
+            primary: "",
+            floating: "",
+            router: "",
+            to: { name: "pages.add" }
+          }
+        },
+        [_c("v-icon", { attrs: { light: "" } }, [_vm._v("add")])],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7e17bf56", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-9f126400", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 140:
+/***/ 142:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1676,11 +1874,11 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueClassComponent = __webpack_require__(16);
+var _vueClassComponent = __webpack_require__(17);
 
 var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
 
-var _vuex = __webpack_require__(17);
+var _vuex = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1803,157 +2001,313 @@ exports.default = CreatePage;
 
 /***/ }),
 
-/***/ 141:
+/***/ 143:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('v-card', [_c('v-card-title', [_vm._v("\n        " + _vm._s(_vm.$t('pages.add')) + "\n    ")]), _vm._v(" "), _c('v-card-text', [_c('form', {
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.save()
-      }
-    }
-  }, [_c('v-card-row', [_c('v-text-field', {
-    attrs: {
-      "name": "input-1",
-      "label": _vm.$t('table.title'),
-      "rules": _vm.messages.validation.title
-    },
-    model: {
-      value: (_vm.page.title),
-      callback: function($$v) {
-        _vm.page.title = $$v
-      },
-      expression: "page.title"
-    }
-  })], 1), _vm._v(" "), _c('v-card-row', [_c('v-text-field', {
-    attrs: {
-      "name": "input-1",
-      "label": _vm.$t('table.slug'),
-      "rules": _vm.messages.validation.slug,
-      "disabled": ""
-    },
-    model: {
-      value: (_vm.page.slug),
-      callback: function($$v) {
-        _vm.page.slug = $$v
-      },
-      expression: "page.slug"
-    }
-  })], 1), _vm._v(" "), _c('v-card-row', [_c('v-select', {
-    attrs: {
-      "label": _vm.$t('table.sites'),
-      "items": _vm.sites,
-      "item-text": "name",
-      "item-value": "id",
-      "item-title": "ui",
-      "multiple": "",
-      "chips": "",
-      "rules": _vm.messages.validation.sites
-    },
-    model: {
-      value: (_vm.page.sites),
-      callback: function($$v) {
-        _vm.page.sites = $$v
-      },
-      expression: "page.sites"
-    }
-  })], 1), _vm._v(" "), _c('v-card-row', [_c('froala', {
-    attrs: {
-      "tag": 'textarea',
-      "config": _vm.editorConfig,
-      "rules": _vm.messages.validation.content
-    },
-    model: {
-      value: (_vm.page.content),
-      callback: function($$v) {
-        _vm.page.content = $$v
-      },
-      expression: "page.content"
-    }
-  })], 1), _vm._v(" "), _c('v-card-row', [_c('v-expansion-panel', [_c('v-expansion-panel-content', [_c('div', {
-    slot: "header"
-  }, [_vm._v("SEO Tags")]), _vm._v(" "), _c('v-card', [_c('v-card-text', [_c('v-card-row', [_c('v-text-field', {
-    attrs: {
-      "name": "seo_title",
-      "label": _vm.$t('seo.title')
-    },
-    model: {
-      value: (_vm.page.seo.title),
-      callback: function($$v) {
-        _vm.page.seo.title = $$v
-      },
-      expression: "page.seo.title"
-    }
-  })], 1), _vm._v(" "), _c('v-card-row', [_c('v-text-field', {
-    attrs: {
-      "name": "seo_keywords",
-      "label": _vm.$t('seo.keywords')
-    },
-    model: {
-      value: (_vm.page.seo.keywords),
-      callback: function($$v) {
-        _vm.page.seo.keywords = $$v
-      },
-      expression: "page.seo.keywords"
-    }
-  })], 1), _vm._v(" "), _c('v-card-row', [_c('v-text-field', {
-    attrs: {
-      "name": "seo_description",
-      "label": _vm.$t('seo.description'),
-      "required": ""
-    },
-    model: {
-      value: (_vm.page.seo.description),
-      callback: function($$v) {
-        _vm.page.seo.description = $$v
-      },
-      expression: "page.seo.description"
-    }
-  })], 1)], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('v-card-row', [_c('v-switch', {
-    attrs: {
-      "label": "Status (Disabled/Enabled)",
-      "primary": ""
-    },
-    model: {
-      value: (_vm.page.status),
-      callback: function($$v) {
-        _vm.page.status = $$v
-      },
-      expression: "page.status"
-    }
-  })], 1), _vm._v(" "), _c('v-card-row', [_c('v-btn', {
-    attrs: {
-      "light": "",
-      "primary": "",
-      "loading": _vm.$store.state.fetching,
-      "type": "submit"
-    }
-  }, [(_vm.$store.state.fetching) ? _c('i', {
-    staticClass: "fa fa-spinner fa-pulse"
-  }) : _vm._e(), _vm._v("\n                    " + _vm._s(_vm.edit ? _vm.$t('form.edit') : _vm.$t('form.create')) + "\n                ")]), _vm._v(" "), _c('v-btn', {
-    attrs: {
-      "default": "",
-      "type": "reset",
-      "router": "",
-      "to": {
-        name: 'pages.index'
-      }
-    }
-  }, [_vm._v("\n                    " + _vm._s(_vm.$t('form.cancel')) + "\n                ")])], 1)], 1)])], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-card",
+    [
+      _c("v-card-title", [
+        _vm._v("\n        " + _vm._s(_vm.$t("pages.add")) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c("v-card-text", [
+        _c(
+          "form",
+          {
+            on: {
+              submit: function($event) {
+                $event.preventDefault()
+                _vm.save()
+              }
+            }
+          },
+          [
+            _c(
+              "v-card-row",
+              [
+                _c("v-text-field", {
+                  attrs: {
+                    name: "input-1",
+                    label: _vm.$t("table.title"),
+                    rules: _vm.messages.validation.title
+                  },
+                  model: {
+                    value: _vm.page.title,
+                    callback: function($$v) {
+                      _vm.$set(_vm.page, "title", $$v)
+                    },
+                    expression: "page.title"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-card-row",
+              [
+                _c("v-text-field", {
+                  attrs: {
+                    name: "input-1",
+                    label: _vm.$t("table.slug"),
+                    rules: _vm.messages.validation.slug,
+                    disabled: ""
+                  },
+                  model: {
+                    value: _vm.page.slug,
+                    callback: function($$v) {
+                      _vm.$set(_vm.page, "slug", $$v)
+                    },
+                    expression: "page.slug"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-card-row",
+              [
+                _c("v-select", {
+                  attrs: {
+                    label: _vm.$t("table.sites"),
+                    items: _vm.sites,
+                    "item-text": "name",
+                    "item-value": "id",
+                    "item-title": "ui",
+                    multiple: "",
+                    chips: "",
+                    rules: _vm.messages.validation.sites
+                  },
+                  model: {
+                    value: _vm.page.sites,
+                    callback: function($$v) {
+                      _vm.$set(_vm.page, "sites", $$v)
+                    },
+                    expression: "page.sites"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-card-row",
+              [
+                _c("froala", {
+                  attrs: {
+                    tag: "textarea",
+                    config: _vm.editorConfig,
+                    rules: _vm.messages.validation.content
+                  },
+                  model: {
+                    value: _vm.page.content,
+                    callback: function($$v) {
+                      _vm.$set(_vm.page, "content", $$v)
+                    },
+                    expression: "page.content"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-card-row",
+              [
+                _c(
+                  "v-expansion-panel",
+                  [
+                    _c(
+                      "v-expansion-panel-content",
+                      [
+                        _c(
+                          "div",
+                          { attrs: { slot: "header" }, slot: "header" },
+                          [_vm._v("SEO Tags")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-card",
+                          [
+                            _c(
+                              "v-card-text",
+                              [
+                                _c(
+                                  "v-card-row",
+                                  [
+                                    _c("v-text-field", {
+                                      attrs: {
+                                        name: "seo_title",
+                                        label: _vm.$t("seo.title")
+                                      },
+                                      model: {
+                                        value: _vm.page.seo.title,
+                                        callback: function($$v) {
+                                          _vm.$set(_vm.page.seo, "title", $$v)
+                                        },
+                                        expression: "page.seo.title"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-card-row",
+                                  [
+                                    _c("v-text-field", {
+                                      attrs: {
+                                        name: "seo_keywords",
+                                        label: _vm.$t("seo.keywords")
+                                      },
+                                      model: {
+                                        value: _vm.page.seo.keywords,
+                                        callback: function($$v) {
+                                          _vm.$set(
+                                            _vm.page.seo,
+                                            "keywords",
+                                            $$v
+                                          )
+                                        },
+                                        expression: "page.seo.keywords"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "v-card-row",
+                                  [
+                                    _c("v-text-field", {
+                                      attrs: {
+                                        name: "seo_description",
+                                        label: _vm.$t("seo.description"),
+                                        required: ""
+                                      },
+                                      model: {
+                                        value: _vm.page.seo.description,
+                                        callback: function($$v) {
+                                          _vm.$set(
+                                            _vm.page.seo,
+                                            "description",
+                                            $$v
+                                          )
+                                        },
+                                        expression: "page.seo.description"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-card-row",
+              [
+                _c("v-switch", {
+                  attrs: { label: "Status (Disabled/Enabled)", primary: "" },
+                  model: {
+                    value: _vm.page.status,
+                    callback: function($$v) {
+                      _vm.$set(_vm.page, "status", $$v)
+                    },
+                    expression: "page.status"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-card-row",
+              [
+                _c(
+                  "v-btn",
+                  {
+                    attrs: {
+                      light: "",
+                      primary: "",
+                      loading: _vm.$store.state.fetching,
+                      type: "submit"
+                    }
+                  },
+                  [
+                    _vm.$store.state.fetching
+                      ? _c("i", { staticClass: "fa fa-spinner fa-pulse" })
+                      : _vm._e(),
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(
+                          _vm.edit ? _vm.$t("form.edit") : _vm.$t("form.create")
+                        ) +
+                        "\n                "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-btn",
+                  {
+                    attrs: {
+                      default: "",
+                      type: "reset",
+                      router: "",
+                      to: { name: "pages.index" }
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(_vm.$t("form.cancel")) +
+                        "\n                "
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-49bf3378", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-61ef21ed", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ 142:
+/***/ 144:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1977,7 +2331,7 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueClassComponent = __webpack_require__(16);
+var _vueClassComponent = __webpack_require__(17);
 
 var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
 
@@ -2010,17 +2364,22 @@ exports.default = ViewPage;
 
 /***/ }),
 
-/***/ 143:
+/***/ 145:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n    Hello world\n")])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [_vm._v("\n    Hello world\n")])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3c47f9a1", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-3d1b0156", module.exports)
   }
 }
 

@@ -11,5 +11,14 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.webpackConfig({
+    resolve: {
+        alias: {
+            '@zix-core': path.resolve('./plugins/Core/Assets/admin/js'),
+            '@zix-base': path.resolve('./plugins')
+        }
+    }
+});
+
 mix.js('resources/assets/admin/js/admin.js', 'public/assets/admin/js')
    .stylus('resources/assets/admin/stylus/admin.styl', 'public/assets/admin/css');

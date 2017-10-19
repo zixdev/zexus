@@ -12,6 +12,10 @@
 */
 
 Route::get('/', function () {
-//    return dd(Plugins::enabledPlugins());
-    return view('tmp-admin');
+    return view('core::default.app');
+});
+
+
+Route::get('admin', function () {
+    return view('core::admin.app');
 });

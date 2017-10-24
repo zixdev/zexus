@@ -2,8 +2,5 @@
     "/base-bundle.js": "/base-bundle.js",
     "/plugin-builder-bundle.js": "/plugin-builder-bundle.js",
     "/assets/admin/js/admin.js": "/assets/admin/js/admin.js",
-    "/assets/admin/css/admin.css": "/assets/admin/css/admin.css",
-    "/3.5bf78606a44bfa8063c9.hot-update.js": "/3.5bf78606a44bfa8063c9.hot-update.js",
-    "/3.5879aa0e0056687048ca.hot-update.js": "/3.5879aa0e0056687048ca.hot-update.js",
-    "/3.1d0592734ba175db991e.hot-update.js": "/3.1d0592734ba175db991e.hot-update.js"
+    "/assets/admin/css/admin.css": "/assets/admin/css/admin.css"
 }

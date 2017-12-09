@@ -21,17 +21,25 @@
         "babel-preset-stage-2": "^6.24.1",
         "babel-register": "^6.26.0",
         "bootstrap-sass": "^3.3.7",
+        "browser-sync": "^2.18.13",
+        "browser-sync-webpack-plugin": "^1.2.0",
         "cross-env": "^5.0.1",
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
-        "node-sass": "^4.5.3",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0"
+        "node-sass": "^4.5.3"
     },
     "dependencies": {
         "font-awesome": "^4.7.0",
         "i": "^0.3.6",
+        "material-ui": "^0.20.0",
         "npm": "^5.6.0",
-        "path-override-webpack-plugin": "^0.1.2"
+        "path-override-webpack-plugin": "^0.1.2",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-redux": "^5.0.6",
+        "redux": "^3.7.2",
+        "redux-logger": "^3.0.6",
+        "redux-promise-middleware": "^5.0.0",
+        "redux-thunk": "^2.2.0"
     }
 }

@@ -1,0 +1,1 @@
+import "@zix-core/admin/main";

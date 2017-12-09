@@ -17,8 +17,8 @@ const APP_NAME = "test";
 let aliases = {};
 let plugins = [];
 
-Object.keys(Modules).map(function(module, index) {
-    if(Modules[module].status) {
+Object.keys(Modules).map(function (module, index) {
+    if (Modules[module].status) {
         aliases["@zix-" + module.toLocaleLowerCase()] = path.resolve('./plugins/' + module + '/Assets');
         plugins.push(new PathOverridePlugin(new RegExp('@zix-' + module.toLocaleLowerCase()), path.resolve('./resources/assets/js/' + APP_NAME + '/' + module.toLocaleLowerCase())));
     }
@@ -32,5 +32,11 @@ mix.webpackConfig({
     plugins: plugins
 });
 
-mix.react('resources/assets/js/main.js', 'public/js')
-    .sass('resources/assets/sass/app.scss', 'public/css');
+mix
+    .react('resources/assets/admin/main.js', 'public/assets/admin/js/app.js')
+    .react('resources/assets/default/main.js', 'public/assets/default/js/app.js');
+
+
+if (mix.inProduction()) {
+    mix.version();
+}

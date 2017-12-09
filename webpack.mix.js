@@ -1,4 +1,6 @@
-let mix = require('laravel-mix');
+const {mix} = require('laravel-mix');
+const PathOverridePlugin = require('path-override-webpack-plugin');
+const Modules = require('./plugins/plugins.json');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,14 +13,24 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.webpackConfig({
-    resolve: {
-        alias: {
-            '@zix-core': path.resolve('./plugins/Core/Assets/admin/js'),
-            '@zix-base': path.resolve('./plugins')
-        }
+const APP_NAME = "test";
+let aliases = {};
+let plugins = [];
+
+Object.keys(Modules).map(function(module, index) {
+    if(Modules[module].status) {
+        aliases["@zix-" + module.toLocaleLowerCase()] = path.resolve('./plugins/' + module + '/Assets');
+        plugins.push(new PathOverridePlugin(new RegExp('@zix-' + module.toLocaleLowerCase()), path.resolve('./resources/assets/js/' + APP_NAME + '/' + module.toLocaleLowerCase())));
     }
 });
 
-mix.js('resources/assets/admin/js/admin.js', 'public/assets/admin/js')
-   .stylus('resources/assets/admin/stylus/admin.styl', 'public/assets/admin/css');
+
+mix.webpackConfig({
+    resolve: {
+        alias: aliases
+    },
+    plugins: plugins
+});
+
+mix.react('resources/assets/js/main.js', 'public/js')
+    .sass('resources/assets/sass/app.scss', 'public/css');

@@ -1,6 +1,4 @@
 {
-    "/base-bundle.js": "/base-bundle.js",
-    "/plugin-builder-bundle.js": "/plugin-builder-bundle.js",
-    "/assets/admin/js/admin.js": "/assets/admin/js/admin.js",
-    "/assets/admin/css/admin.css": "/assets/admin/css/admin.css"
+    "/js/main.js": "/js/main.js",
+    "/css/app.css": "/css/app.css"
 }

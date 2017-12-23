@@ -1,4 +1,5 @@
 {
-    "/assets/admin/js/admin.js": "/assets/admin/js/admin.js",
-    "/assets/admin/css/admin.css": "/assets/admin/css/admin.css"
+    "/base-bundle.js": "/base-bundle.js",
+    "/assets/admin/js/app.js": "/assets/admin/js/app.js",
+    "/assets/admin/css/app.css": "/assets/admin/css/app.css"
 }

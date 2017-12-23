@@ -13,14 +13,16 @@ const Modules = require('./plugins/plugins.json');
  |
  */
 
-const APP_NAME = "test";
-let aliases = {};
+const APP_NAME = "zixapi";
+let aliases = {
+    '@zix': path.resolve('./plugins')
+};
 let plugins = [];
 
 Object.keys(Modules).map(function (module, index) {
     if (Modules[module].status) {
         aliases["@zix-" + module.toLocaleLowerCase()] = path.resolve('./plugins/' + module + '/Assets');
-        plugins.push(new PathOverridePlugin(new RegExp('@zix-' + module.toLocaleLowerCase()), path.resolve('./resources/assets/js/' + APP_NAME + '/' + module.toLocaleLowerCase())));
+        plugins.push(new PathOverridePlugin(new RegExp('@zix-' + module.toLocaleLowerCase()), path.resolve('./resources/assets/' + APP_NAME + '/' + module.toLocaleLowerCase())));
     }
 });
 
@@ -32,5 +34,10 @@ mix.webpackConfig({
     plugins: plugins
 });
 
-mix.js('resources/assets/admin/js/admin.js', 'public/assets/admin/js')
-   .stylus('resources/assets/admin/stylus/admin.styl', 'public/assets/admin/css');
+mix.js('resources/assets/admin/main.js', 'public/assets/admin/js/app.js')
+    .stylus('resources/assets/admin/main.styl', 'public/assets/admin/css/app.css');
+
+
+if (mix.inProduction()) {
+    mix.version();
+}

@@ -1,18 +1,32 @@
 /** Stylus Styles */
 
 // Available variables https://github.com/vuetifyjs/vuetify/blob/master/src/stylus/settings/_variables.styl
-
-@import '~vuetify/src/stylus/settings/_colors'
-
-$theme := {
-  primary: $grey.darken-4
-  accent: $grey.lighten-4
-  secondary: $grey.lighten-1
-  info: $blue.lighten-1
-  warning: $amber.darken-2
-  error: $red.accent-4
-  success: $green.lighten-2
-}
-
 @import '~vuetify/src/stylus/main'
 
+/*
+ * Router Animations
+ */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0
+}
+
+
+[v-cloak] {
+  display: none;
+}
+.text-capitalize
+  text-transform: capitalize
+
+
+.btn-group .btn
+  opacity: 1 !important
+
+.btn--bottom.btn--absolute
+  bottom: 75px !important

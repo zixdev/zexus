@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('core::default.app');
 });
@@ -23,3 +24,18 @@ Route::get('admin', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('tester', '\Zix\Core\Http\Controllers\SiteController@index');
+Route::get('test', function() {
+//    \Zix\Core\Models\Site::create([
+//        'name' => 'zixfinance',
+//        'url' => 'http://localhost:8030',
+//        'ui' => 'default-v2',
+//        'status' => true
+//    ]);
+//    \Zix\Core\Models\Site::first()->configs()->create([
+//        'key' => 'name', 'value' => 'test'
+//    ]);
+    return \Zix\Core\Models\Site::with('configs')->get();
+
+});

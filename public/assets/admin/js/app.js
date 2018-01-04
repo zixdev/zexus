@@ -65809,6 +65809,8 @@ var _storage = __webpack_require__(87);
 
 var _logs = __webpack_require__(88);
 
+var _languageLines = __webpack_require__(212);
+
 exports.default = [{
     name: 'system.index',
     path: '/advanced',
@@ -65844,6 +65846,11 @@ exports.default = [{
         path: '/advanced/logs',
         component: _logs.SystemLogs,
         meta: { requiresAuth: true, permission: 'view_sites', menu: true }
+    }, {
+        name: 'system.language_lines.index',
+        path: '/advanced/language-lines',
+        component: _languageLines.LanguageLines,
+        meta: { requiresAuth: true, permission: 'view_language_lines', menu: true }
     }]
 }];
 
@@ -67812,6 +67819,140 @@ if (typeof window !== 'undefined' && window.Vue) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * Components are lazy-loaded - See "Grouping Components in the Same Chunk"
+ * http://router.vuejs.org/en/advanced/lazy-loading.html
+ */
+/* eslint-disable global-require */
+var LanguageLines = exports.LanguageLines = function LanguageLines(r) {
+  return __webpack_require__.e/* require.ensure */(0).then((function () {
+    return r(__webpack_require__(213));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
 
 /***/ })
 /******/ ]);

@@ -12,8 +12,6 @@
 */
 
 
-use Zix\Core\Models\LanguageLine;
-
 Route::get('/', function () {
     return view('core::default.app');
 });
@@ -28,12 +26,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('tester', '\Zix\Core\Http\Controllers\SiteController@index');
-Route::get('test', function() {
-  /*  LanguageLine::create([
+Route::get('test', function () {
+    \Zix\Core\Models\Translation::create([
         'group' => 'validation',
         'key' => 'required',
         'text' => ['en' => 'This is a required field', 'nl' => 'Dit is een verplicht veld'],
-    ]);*/
+    ]);
 //    \Zix\Core\Models\Site::create([
 //        'name' => 'zixfinance',
 //        'url' => 'http://localhost:8030',

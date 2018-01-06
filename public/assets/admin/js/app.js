@@ -40930,7 +40930,7 @@ var index_esm = {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(20);
-module.exports = __webpack_require__(98);
+module.exports = __webpack_require__(99);
 
 
 /***/ }),
@@ -62435,11 +62435,11 @@ var _router = __webpack_require__(78);
 
 var _router2 = _interopRequireDefault(_router);
 
-var _http = __webpack_require__(94);
+var _http = __webpack_require__(95);
 
 var _http2 = _interopRequireDefault(_http);
 
-var _lang = __webpack_require__(96);
+var _lang = __webpack_require__(97);
 
 var _lang2 = _interopRequireDefault(_lang);
 
@@ -62619,22 +62619,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 var AppHeader = exports.AppHeader = function AppHeader(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(99));
+    return r(__webpack_require__(100));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppFooter = exports.AppFooter = function AppFooter(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(100));
+    return r(__webpack_require__(101));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppSideBar = exports.AppSideBar = function AppSideBar(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(101));
+    return r(__webpack_require__(102));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppSnackBar = exports.AppSnackBar = function AppSnackBar(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(102));
+    return r(__webpack_require__(103));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -62843,7 +62843,13 @@ exports.default = {
     },
     fetching: false,
     sidebar: true,
-    app_name: 'ZIX DEV'
+    app_name: 'ZIX DEV',
+
+    lang: {
+        supported_languages: ['en', 'fr', 'ar'],
+        default_lang: 'en',
+        fallback_lang: 'en'
+    }
 };
 
 /***/ }),
@@ -65654,11 +65660,11 @@ var _advanced = __webpack_require__(85);
 
 var _advanced2 = _interopRequireDefault(_advanced);
 
-var _accounts = __webpack_require__(89);
+var _accounts = __webpack_require__(90);
 
 var _accounts2 = _interopRequireDefault(_accounts);
 
-var _appearance = __webpack_require__(91);
+var _appearance = __webpack_require__(92);
 
 var _appearance2 = _interopRequireDefault(_appearance);
 
@@ -65733,17 +65739,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var Index = exports.Index = function Index(r) {
   return __webpack_require__.e/* require.ensure */(4).then((function () {
-    return r(__webpack_require__(103));
+    return r(__webpack_require__(104));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Create = exports.Create = function Create(r) {
   return __webpack_require__.e/* require.ensure */(4).then((function () {
-    return r(__webpack_require__(104));
+    return r(__webpack_require__(105));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var View = exports.View = function View(r) {
   return __webpack_require__.e/* require.ensure */(4).then((function () {
-    return r(__webpack_require__(105));
+    return r(__webpack_require__(106));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65788,7 +65794,7 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var Home = exports.Home = function Home(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(106));
+    return r(__webpack_require__(107));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65809,7 +65815,7 @@ var _storage = __webpack_require__(87);
 
 var _logs = __webpack_require__(88);
 
-var _languageLines = __webpack_require__(212);
+var _translations = __webpack_require__(89);
 
 exports.default = [{
     name: 'system.index',
@@ -65847,10 +65853,20 @@ exports.default = [{
         component: _logs.SystemLogs,
         meta: { requiresAuth: true, permission: 'view_sites', menu: true }
     }, {
-        name: 'system.language_lines.index',
-        path: '/advanced/language-lines',
-        component: _languageLines.LanguageLines,
-        meta: { requiresAuth: true, permission: 'view_language_lines', menu: true }
+        name: 'system.translations.index',
+        path: '/advanced/translations',
+        component: _translations.Translations,
+        meta: { requiresAuth: true, permission: 'view_translations', menu: true }
+    }, {
+        name: 'system.translations.create',
+        path: '/advanced/translations/create',
+        component: _translations.ManageTranslation,
+        meta: { requiresAuth: true, permission: 'create_translations' }
+    }, {
+        name: 'system.translations.edit',
+        path: '/advanced/translations/:id/edit',
+        component: _translations.ManageTranslation,
+        meta: { requiresAuth: true, permission: 'update_translations' }
     }]
 }];
 
@@ -65871,17 +65887,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var AllSites = exports.AllSites = function AllSites(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(107));
+    return r(__webpack_require__(108));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateSites = exports.CreateSites = function CreateSites(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(108));
+    return r(__webpack_require__(109));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var ConfigSites = exports.ConfigSites = function ConfigSites(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(109));
+    return r(__webpack_require__(110));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65902,7 +65918,7 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var FileManager = exports.FileManager = function FileManager(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(110));
+    return r(__webpack_require__(111));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65923,7 +65939,7 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var SystemLogs = exports.SystemLogs = function SystemLogs(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(111));
+    return r(__webpack_require__(112));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65935,10 +65951,36 @@ var SystemLogs = exports.SystemLogs = function SystemLogs(r) {
 
 
 Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * Components are lazy-loaded - See "Grouping Components in the Same Chunk"
+ * http://router.vuejs.org/en/advanced/lazy-loading.html
+ */
+/* eslint-disable global-require */
+var Translations = exports.Translations = function Translations(r) {
+  return __webpack_require__.e/* require.ensure */(0).then((function () {
+    return r(__webpack_require__(113));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var ManageTranslation = exports.ManageTranslation = function ManageTranslation(r) {
+  return __webpack_require__.e/* require.ensure */(0).then((function () {
+    return r(__webpack_require__(114));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _users = __webpack_require__(90);
+var _users = __webpack_require__(91);
 
 exports.default = [{
     name: 'accounts.index',
@@ -65974,7 +66016,7 @@ exports.default = [{
 }];
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65990,27 +66032,27 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var AllUsers = exports.AllUsers = function AllUsers(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(112));
+    return r(__webpack_require__(115));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateUsers = exports.CreateUsers = function CreateUsers(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(113));
+    return r(__webpack_require__(116));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var UserRoles = exports.UserRoles = function UserRoles(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(114));
+    return r(__webpack_require__(117));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var UserDetails = exports.UserDetails = function UserDetails(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(115));
+    return r(__webpack_require__(118));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66020,9 +66062,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _menu = __webpack_require__(92);
+var _menu = __webpack_require__(93);
 
-var _banner = __webpack_require__(93);
+var _banner = __webpack_require__(94);
 
 exports.default = [{
     name: 'appearance.index',
@@ -66058,7 +66100,7 @@ exports.default = [{
 }];
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66074,17 +66116,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var AllMenus = exports.AllMenus = function AllMenus(r) {
   return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(116));
+    return r(__webpack_require__(119));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateMenu = exports.CreateMenu = function CreateMenu(r) {
   return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(117));
+    return r(__webpack_require__(120));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66100,17 +66142,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var AllBanners = exports.AllBanners = function AllBanners(r) {
   return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(118));
+    return r(__webpack_require__(121));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateBanner = exports.CreateBanner = function CreateBanner(r) {
   return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(119));
+    return r(__webpack_require__(122));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66126,7 +66168,7 @@ var _axios = __webpack_require__(4);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _interceptors = __webpack_require__(95);
+var _interceptors = __webpack_require__(96);
 
 var _interceptors2 = _interopRequireDefault(_interceptors);
 
@@ -66162,7 +66204,7 @@ function install(Vue, _ref) {
 }
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66222,7 +66264,7 @@ exports.default = function (http, store, router) {
 };
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66236,7 +66278,7 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueI18n = __webpack_require__(97);
+var _vueI18n = __webpack_require__(98);
 
 var _vueI18n2 = _interopRequireDefault(_vueI18n);
 
@@ -66269,7 +66311,7 @@ var i18n = new _vueI18n2.default({
 exports.default = i18n;
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67815,144 +67857,10 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 99 */,
-/* 100 */,
-/* 101 */,
-/* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */,
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */,
-/* 137 */,
-/* 138 */,
-/* 139 */,
-/* 140 */,
-/* 141 */,
-/* 142 */,
-/* 143 */,
-/* 144 */,
-/* 145 */,
-/* 146 */,
-/* 147 */,
-/* 148 */,
-/* 149 */,
-/* 150 */,
-/* 151 */,
-/* 152 */,
-/* 153 */,
-/* 154 */,
-/* 155 */,
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */,
-/* 208 */,
-/* 209 */,
-/* 210 */,
-/* 211 */,
-/* 212 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * Components are lazy-loaded - See "Grouping Components in the Same Chunk"
- * http://router.vuejs.org/en/advanced/lazy-loading.html
- */
-/* eslint-disable global-require */
-var LanguageLines = exports.LanguageLines = function LanguageLines(r) {
-  return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(213));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
 
 /***/ })
 /******/ ]);

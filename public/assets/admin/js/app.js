@@ -39670,6 +39670,8 @@ var MAIN_SET_MESSAGE = exports.MAIN_SET_MESSAGE = 'MAIN_SET_MESSAGE';
 var MAIN_SET_FETCHING = exports.MAIN_SET_FETCHING = 'MAIN_SET_FETCHING';
 var TOGGLE_SIDEBAR = exports.TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR';
 
+var SET_BREADCRUMBS = exports.SET_BREADCRUMBS = 'SET_BREADCRUMBS';
+
 /***/ }),
 /* 16 */
 /***/ (function(module, exports) {
@@ -40930,7 +40932,7 @@ var index_esm = {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(20);
-module.exports = __webpack_require__(99);
+module.exports = __webpack_require__(98);
 
 
 /***/ }),
@@ -40957,7 +40959,10 @@ __webpack_require__(57);
 
 // 1. get all active modules
 window.Zexus = {
-    routes: []
+    routes: [],
+    lang: {
+        groups: ['dashboard', 'system', 'table', 'notifications']
+    }
 };
 
 /***/ }),
@@ -62435,11 +62440,11 @@ var _router = __webpack_require__(78);
 
 var _router2 = _interopRequireDefault(_router);
 
-var _http = __webpack_require__(95);
+var _http = __webpack_require__(94);
 
 var _http2 = _interopRequireDefault(_http);
 
-var _lang = __webpack_require__(97);
+var _lang = __webpack_require__(96);
 
 var _lang2 = _interopRequireDefault(_lang);
 
@@ -62566,6 +62571,9 @@ var _dec, _class; //
 //
 //
 //
+//
+//
+//
 
 var _vue = __webpack_require__(1);
 
@@ -62587,15 +62595,23 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var ZixAdmin = (_dec = (0, _vueClassComponent2.default)({
     components: {
-        AppHeader: _components.AppHeader, AppFooter: _components.AppFooter, AppSideBar: _components.AppSideBar, AppSnackBar: _components.AppSnackBar
+        AppHeader: _components.AppHeader, AppFooter: _components.AppFooter, AppSideBar: _components.AppSideBar, AppBreadcrumbs: _components.AppBreadcrumbs, AppNotifications: _components.AppNotifications
     }
 }), _dec(_class = function (_Vue) {
     _inherits(ZixAdmin, _Vue);
 
     function ZixAdmin() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, ZixAdmin);
 
-        return _possibleConstructorReturn(this, (ZixAdmin.__proto__ || Object.getPrototypeOf(ZixAdmin)).apply(this, arguments));
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ZixAdmin.__proto__ || Object.getPrototypeOf(ZixAdmin)).call.apply(_ref, [this].concat(args))), _this), _this.items = [], _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(ZixAdmin, [{
@@ -62619,20 +62635,25 @@ Object.defineProperty(exports, "__esModule", {
 });
 var AppHeader = exports.AppHeader = function AppHeader(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(100));
+    return r(__webpack_require__(99));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppFooter = exports.AppFooter = function AppFooter(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(101));
+    return r(__webpack_require__(100));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppSideBar = exports.AppSideBar = function AppSideBar(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
+    return r(__webpack_require__(101));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var AppBreadcrumbs = exports.AppBreadcrumbs = function AppBreadcrumbs(r) {
+  return __webpack_require__.e/* require.ensure */(1).then((function () {
     return r(__webpack_require__(102));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-var AppSnackBar = exports.AppSnackBar = function AppSnackBar(r) {
+var AppNotifications = exports.AppNotifications = function AppNotifications(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
     return r(__webpack_require__(103));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
@@ -62661,6 +62682,8 @@ var render = function() {
             "v-container",
             { staticClass: "l-main", attrs: { fluid: "" } },
             [
+              _c("app-breadcrumbs"),
+              _vm._v(" "),
               _c(
                 "transition",
                 { attrs: { name: "fade", mode: "out-in" } },
@@ -62674,7 +62697,7 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("app-snack-bar"),
+      _c("app-notifications"),
       _vm._v(" "),
       _c("app-footer")
     ],
@@ -62849,7 +62872,9 @@ exports.default = {
         supported_languages: ['en', 'fr', 'ar'],
         default_lang: 'en',
         fallback_lang: 'en'
-    }
+    },
+
+    breadcrumbs: ['dashboard.index']
 };
 
 /***/ }),
@@ -62893,6 +62918,17 @@ exports.default = {
         var commit = _ref4.commit;
 
         commit(TYPES.TOGGLE_SIDEBAR);
+    },
+    setBreadCrumbs: function setBreadCrumbs(_ref5) {
+        var commit = _ref5.commit;
+        var items = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+
+        var routes = ['dashboard.index'];
+        items.map(function (item) {
+            return routes.push(item);
+        });
+
+        commit(TYPES.SET_BREADCRUMBS, routes);
     }
 }; // https://vuex.vuejs.org/en/actions.html
 
@@ -62925,6 +62961,8 @@ exports.default = (_TYPES$MAIN_SET_FETCH = {}, _defineProperty(_TYPES$MAIN_SET_F
     state.messages[obj.type] = obj.message;
 }), _defineProperty(_TYPES$MAIN_SET_FETCH, TYPES.TOGGLE_SIDEBAR, function (state) {
     state.sidebar = !state.sidebar;
+}), _defineProperty(_TYPES$MAIN_SET_FETCH, TYPES.SET_BREADCRUMBS, function (state, items) {
+    state.breadcrumbs = items;
 }), _TYPES$MAIN_SET_FETCH);
 
 /***/ }),
@@ -65656,15 +65694,15 @@ var _home = __webpack_require__(83);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _advanced = __webpack_require__(85);
+var _system = __webpack_require__(84);
 
-var _advanced2 = _interopRequireDefault(_advanced);
+var _system2 = _interopRequireDefault(_system);
 
-var _accounts = __webpack_require__(90);
+var _accounts = __webpack_require__(89);
 
 var _accounts2 = _interopRequireDefault(_accounts);
 
-var _appearance = __webpack_require__(92);
+var _appearance = __webpack_require__(91);
 
 var _appearance2 = _interopRequireDefault(_appearance);
 
@@ -65675,7 +65713,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_operator
 // Thus a new array is created, containing all objects that match the routes.
 // ...dashboard must be the last one because of the catchall instruction
-var Routes = [].concat(_toConsumableArray(_home2.default), _toConsumableArray(_advanced2.default));
+var Routes = [].concat(_toConsumableArray(_home2.default), _toConsumableArray(_system2.default));
 
 Routes.map(function (route) {
     Zexus.routes.push(route);
@@ -65763,13 +65801,15 @@ var View = exports.View = function View(r) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _components = __webpack_require__(84);
-
+var Dashboard = function Dashboard(r) {
+    return __webpack_require__.e/* require.ensure */(1).then((function () {
+        return r(__webpack_require__(107));
+    }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
 exports.default = [{
-    name: 'dashboard',
+    name: 'dashboard.index',
     path: '/',
-    component: _components.Home,
+    component: Dashboard,
     meta: {
         requiresAuth: true,
         icon: 'dashboard',
@@ -65785,18 +65825,69 @@ exports.default = [{
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
-/**
- * Components are lazy-loaded - See "Grouping Components in the Same Chunk"
- * http://router.vuejs.org/en/advanced/lazy-loading.html
- */
-/* eslint-disable global-require */
-var Home = exports.Home = function Home(r) {
-  return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(107));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
+
+var _sites = __webpack_require__(85);
+
+var _storage = __webpack_require__(86);
+
+var _logs = __webpack_require__(87);
+
+var _translations = __webpack_require__(88);
+
+exports.default = [{
+    name: 'system.index',
+    path: '/system',
+    component: _sites.Sites,
+    meta: { requiresAuth: true, permission: 'view_admin', icon: 'settings', menu: true },
+    children: [{
+        name: 'system.sites.index',
+        path: '/system/sites',
+        component: _sites.Sites,
+        meta: { requiresAuth: true, permission: 'view_sites', menu: true }
+    }, {
+        name: 'system.sites.create',
+        path: '/system/sites/create',
+        component: _sites.SiteManager,
+        meta: { requiresAuth: true, permission: 'create_sites' }
+    }, {
+        name: 'system.sites.edit',
+        path: '/system/sites/:id/edit',
+        component: _sites.SiteManager,
+        meta: { requiresAuth: true, permission: 'update_sites' }
+    }, {
+        name: 'system.sites.config.index',
+        path: '/system/sites/:id/config',
+        component: _sites.SiteConfig,
+        meta: { requiresAuth: true, permission: 'view_site_configs' }
+    }, {
+        name: 'system.file_manager.index',
+        path: '/system/file-manager',
+        component: _storage.FileManager,
+        meta: { requiresAuth: true, permission: 'view_sites', menu: true }
+    }, {
+        name: 'system.logs.index',
+        path: '/system/logs',
+        component: _logs.SystemLogs,
+        meta: { requiresAuth: true, permission: 'view_sites', menu: true }
+    }, {
+        name: 'system.translations.index',
+        path: '/system/translations',
+        component: _translations.Translations,
+        meta: { requiresAuth: true, permission: 'view_translations', menu: true }
+    }, {
+        name: 'system.translations.create',
+        path: '/system/translations/create',
+        component: _translations.TranslationManager,
+        meta: { requiresAuth: true, permission: 'create_translations' }
+    }, {
+        name: 'system.translations.edit',
+        path: '/system/translations/:id/edit',
+        component: _translations.TranslationManager,
+        meta: { requiresAuth: true, permission: 'update_translations' }
+    }]
+}];
 
 /***/ }),
 /* 85 */
@@ -65806,78 +65897,6 @@ var Home = exports.Home = function Home(r) {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _sites = __webpack_require__(86);
-
-var _storage = __webpack_require__(87);
-
-var _logs = __webpack_require__(88);
-
-var _translations = __webpack_require__(89);
-
-exports.default = [{
-    name: 'system.index',
-    path: '/advanced',
-    component: _sites.AllSites,
-    meta: { requiresAuth: true, permission: 'view_admin', icon: 'settings', menu: true },
-    children: [{
-        name: 'system.sites.index',
-        path: '/advanced/sites',
-        component: _sites.AllSites,
-        meta: { requiresAuth: true, permission: 'view_sites', menu: true }
-    }, {
-        name: 'system.sites.create',
-        path: '/advanced/sites/create',
-        component: _sites.CreateSites,
-        meta: { requiresAuth: true, permission: 'create_sites' }
-    }, {
-        name: 'system.sites.edit',
-        path: '/advanced/sites/:id/edit',
-        component: _sites.CreateSites,
-        meta: { requiresAuth: true, permission: 'update_sites' }
-    }, {
-        name: 'system.sites.config.index',
-        path: '/advanced/sites/:id/config',
-        component: _sites.ConfigSites,
-        meta: { requiresAuth: true, permission: 'view_site_configs' }
-    }, {
-        name: 'system.file_manager.index',
-        path: '/advanced/file-manager',
-        component: _storage.FileManager,
-        meta: { requiresAuth: true, permission: 'view_sites', menu: true }
-    }, {
-        name: 'system.logs.index',
-        path: '/advanced/logs',
-        component: _logs.SystemLogs,
-        meta: { requiresAuth: true, permission: 'view_sites', menu: true }
-    }, {
-        name: 'system.translations.index',
-        path: '/advanced/translations',
-        component: _translations.Translations,
-        meta: { requiresAuth: true, permission: 'view_translations', menu: true }
-    }, {
-        name: 'system.translations.create',
-        path: '/advanced/translations/create',
-        component: _translations.ManageTranslation,
-        meta: { requiresAuth: true, permission: 'create_translations' }
-    }, {
-        name: 'system.translations.edit',
-        path: '/advanced/translations/:id/edit',
-        component: _translations.ManageTranslation,
-        meta: { requiresAuth: true, permission: 'update_translations' }
-    }]
-}];
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
   value: true
 });
 /**
@@ -65885,24 +65904,24 @@ Object.defineProperty(exports, "__esModule", {
  * http://router.vuejs.org/en/advanced/lazy-loading.html
  */
 /* eslint-disable global-require */
-var AllSites = exports.AllSites = function AllSites(r) {
+var Sites = exports.Sites = function Sites(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
     return r(__webpack_require__(108));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-var CreateSites = exports.CreateSites = function CreateSites(r) {
+var SiteManager = exports.SiteManager = function SiteManager(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
     return r(__webpack_require__(109));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-var ConfigSites = exports.ConfigSites = function ConfigSites(r) {
+var SiteConfig = exports.SiteConfig = function SiteConfig(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
     return r(__webpack_require__(110));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65923,7 +65942,7 @@ var FileManager = exports.FileManager = function FileManager(r) {
 };
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65944,7 +65963,7 @@ var SystemLogs = exports.SystemLogs = function SystemLogs(r) {
 };
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65963,14 +65982,14 @@ var Translations = exports.Translations = function Translations(r) {
     return r(__webpack_require__(113));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-var ManageTranslation = exports.ManageTranslation = function ManageTranslation(r) {
+var TranslationManager = exports.TranslationManager = function TranslationManager(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
     return r(__webpack_require__(114));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65980,7 +65999,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _users = __webpack_require__(91);
+var _users = __webpack_require__(90);
 
 exports.default = [{
     name: 'accounts.index',
@@ -66016,7 +66035,7 @@ exports.default = [{
 }];
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66052,7 +66071,7 @@ var UserDetails = exports.UserDetails = function UserDetails(r) {
 };
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66062,9 +66081,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _menu = __webpack_require__(93);
+var _menu = __webpack_require__(92);
 
-var _banner = __webpack_require__(94);
+var _banner = __webpack_require__(93);
 
 exports.default = [{
     name: 'appearance.index',
@@ -66100,7 +66119,7 @@ exports.default = [{
 }];
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66126,7 +66145,7 @@ var CreateMenu = exports.CreateMenu = function CreateMenu(r) {
 };
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66152,7 +66171,7 @@ var CreateBanner = exports.CreateBanner = function CreateBanner(r) {
 };
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66168,7 +66187,7 @@ var _axios = __webpack_require__(4);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _interceptors = __webpack_require__(96);
+var _interceptors = __webpack_require__(95);
 
 var _interceptors2 = _interopRequireDefault(_interceptors);
 
@@ -66204,7 +66223,7 @@ function install(Vue, _ref) {
 }
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66264,7 +66283,7 @@ exports.default = function (http, store, router) {
 };
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66278,7 +66297,7 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueI18n = __webpack_require__(98);
+var _vueI18n = __webpack_require__(97);
 
 var _vueI18n2 = _interopRequireDefault(_vueI18n);
 
@@ -66304,14 +66323,14 @@ var i18n = new _vueI18n2.default({
     messages: messages // set locale messages
 });
 
-// axios.post('/api/lang/set-admin', {lang: LOCAL_LANG})
-//     .then(response => {
-//         i18n.setLocaleMessage(LOCAL_LANG, response.data.trans)
-//     })
+_axios2.default.get('/api/translations/groups/' + Zexus.lang.groups.join(',')).then(function (response) {
+    return i18n.setLocaleMessage(LOCAL_LANG, response.data);
+});
+
 exports.default = i18n;
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67857,7 +67876,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

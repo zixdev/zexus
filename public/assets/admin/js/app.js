@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"advanced-bundle","1":"base-bundle","2":"appearance-bundle","3":"accounts-bundle","4":"pages-bundle"}[chunkId]||chunkId) + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"advanced-bundle","1":"base-bundle","2":"accounts-bundle","3":"appearance-bundle","4":"pages-bundle"}[chunkId]||chunkId) + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -66001,12 +66001,18 @@ Object.defineProperty(exports, "__esModule", {
 
 var _users = __webpack_require__(90);
 
+var _roles = __webpack_require__(223);
+
 exports.default = [{
     name: 'accounts.index',
     path: '/accounts',
     component: _users.AllUsers,
     meta: { requiresAuth: true, permission: 'view_users', icon: 'person', menu: true },
-    children: [{
+    children: [
+    /*
+     * User Management
+     */
+    {
         name: 'accounts.users.index',
         path: '/accounts',
         component: _users.AllUsers,
@@ -66031,6 +66037,30 @@ exports.default = [{
         path: '/accounts/:id/roles',
         component: _users.UserRoles,
         meta: { requiresAuth: true, permission: 'update_roles' }
+    },
+    /*
+     * Roles Managements
+     */
+    {
+        name: 'accounts.roles.index',
+        path: '/accounts/roles',
+        component: _roles.Roles,
+        meta: { requiresAuth: true, permission: 'view_roles', menu: true }
+    }, {
+        name: 'accounts.roles.create',
+        path: '/accounts/roles/create',
+        component: _roles.RoleManager,
+        meta: { requiresAuth: true, permission: 'create_roles' }
+    }, {
+        name: 'accounts.roles.edit',
+        path: '/accounts/roles/:id/edit',
+        component: _roles.RoleManager,
+        meta: { requiresAuth: true, permission: 'update_roles' }
+    }, {
+        name: 'accounts.roles.permissions',
+        path: '/accounts/roles/:id/permissions',
+        component: _roles.Permissions,
+        meta: { requiresAuth: true, permission: 'update_roles' }
     }]
 }];
 
@@ -66050,22 +66080,22 @@ Object.defineProperty(exports, "__esModule", {
  */
 /* eslint-disable global-require */
 var AllUsers = exports.AllUsers = function AllUsers(r) {
-  return __webpack_require__.e/* require.ensure */(3).then((function () {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
     return r(__webpack_require__(115));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateUsers = exports.CreateUsers = function CreateUsers(r) {
-  return __webpack_require__.e/* require.ensure */(3).then((function () {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
     return r(__webpack_require__(116));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var UserRoles = exports.UserRoles = function UserRoles(r) {
-  return __webpack_require__.e/* require.ensure */(3).then((function () {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
     return r(__webpack_require__(117));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var UserDetails = exports.UserDetails = function UserDetails(r) {
-  return __webpack_require__.e/* require.ensure */(3).then((function () {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
     return r(__webpack_require__(118));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
@@ -66134,12 +66164,12 @@ Object.defineProperty(exports, "__esModule", {
  */
 /* eslint-disable global-require */
 var AllMenus = exports.AllMenus = function AllMenus(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
+  return __webpack_require__.e/* require.ensure */(3).then((function () {
     return r(__webpack_require__(119));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateMenu = exports.CreateMenu = function CreateMenu(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
+  return __webpack_require__.e/* require.ensure */(3).then((function () {
     return r(__webpack_require__(120));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
@@ -66160,12 +66190,12 @@ Object.defineProperty(exports, "__esModule", {
  */
 /* eslint-disable global-require */
 var AllBanners = exports.AllBanners = function AllBanners(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
+  return __webpack_require__.e/* require.ensure */(3).then((function () {
     return r(__webpack_require__(121));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateBanner = exports.CreateBanner = function CreateBanner(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
+  return __webpack_require__.e/* require.ensure */(3).then((function () {
     return r(__webpack_require__(122));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
@@ -67880,6 +67910,161 @@ if (typeof window !== 'undefined' && window.Vue) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */,
+/* 103 */,
+/* 104 */,
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * Components are lazy-loaded - See "Grouping Components in the Same Chunk"
+ * http://router.vuejs.org/en/advanced/lazy-loading.html
+ */
+/* eslint-disable global-require */
+var Roles = exports.Roles = function Roles(r) {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
+    return r(__webpack_require__(224));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var RoleManager = exports.RoleManager = function RoleManager(r) {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
+    return r(__webpack_require__(225));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var Permissions = exports.Permissions = function Permissions(r) {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
+    return r(__webpack_require__(230));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
 
 /***/ })
 /******/ ]);

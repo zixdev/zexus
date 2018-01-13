@@ -12,6 +12,8 @@
 */
 
 
+use Zix\Core\Events\Seeder\AppPermissionsCreate;
+
 Route::get('/', function () {
     return view('core::default.app');
 });
@@ -27,11 +29,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('tester', '\Zix\Core\Http\Controllers\SiteController@index');
 Route::get('test', function () {
-    \Zix\Core\Models\Translation::create([
-        'group' => 'validation',
-        'key' => 'required',
-        'text' => ['en' => 'This is a required field', 'nl' => 'Dit is een verplicht veld'],
-    ]);
+    $permissions = collect();
+    event(new AppPermissionsCreate($permissions));
+    return $permissions;
+
 //    \Zix\Core\Models\Site::create([
 //        'name' => 'zixfinance',
 //        'url' => 'http://localhost:8030',

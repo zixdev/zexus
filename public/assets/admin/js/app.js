@@ -65713,7 +65713,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_operator
 // Thus a new array is created, containing all objects that match the routes.
 // ...dashboard must be the last one because of the catchall instruction
-var Routes = [].concat(_toConsumableArray(_home2.default), _toConsumableArray(_system2.default));
+var Routes = [].concat(_toConsumableArray(_home2.default), _toConsumableArray(_accounts2.default), _toConsumableArray(_system2.default));
 
 Routes.map(function (route) {
     Zexus.routes.push(route);

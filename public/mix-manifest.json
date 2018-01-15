@@ -1,9 +1,9 @@
 {
-    "/advanced-bundle.js": "/advanced-bundle.js",
-    "/base-bundle.js": "/base-bundle.js",
-    "/accounts-bundle.js": "/accounts-bundle.js",
-    "/appearance-bundle.js": "/appearance-bundle.js",
-    "/pages-bundle.js": "/pages-bundle.js",
-    "/assets/admin/js/app.js": "/assets/admin/js/app.js",
-    "/assets/admin/css/app.css": "/assets/admin/css/app.css"
+    "/advanced-bundle.js": "/advanced-bundle.js?id=693daf5092e6be04bdce",
+    "/base-bundle.js": "/base-bundle.js?id=096b2c4da51e88ac163f",
+    "/accounts-bundle.js": "/accounts-bundle.js?id=5e4fb5c53cddc9197e21",
+    "/appearance-bundle.js": "/appearance-bundle.js?id=cb4eaad7fea067c40601",
+    "/pages-bundle.js": "/pages-bundle.js?id=7838d1549082cf56a476",
+    "/admin/js/app.js": "/admin/js/app.js?id=8d264d6375f5019a17d1",
+    "/admin/css/app.css": "/admin/css/app.css?id=1469ccdbbeb5780512a4"
 }

@@ -34,8 +34,8 @@ mix.webpackConfig({
     plugins: plugins
 });
 
-mix.js('resources/assets/admin/main.js', 'public/assets/admin/js/app.js')
-    .stylus('resources/assets/admin/main.styl', 'public/assets/admin/css/app.css');
+mix.js('resources/assets/admin/main.js', 'public/admin/js/app.js')
+    .stylus('resources/assets/admin/main.styl', 'public/admin/css/app.css');
 
 
 if (mix.inProduction()) {

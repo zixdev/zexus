@@ -29,6 +29,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('tester', '\Zix\Core\Http\Controllers\SiteController@index');
 Route::get('test', function () {
+    $user = \App\User::first();
+
+    return $user->load('roles');
+    return $user->getAllPermissions()->pluck('name');
     $permissions = collect();
     event(new GetAppPermissions($permissions));
     return $permissions;

@@ -40932,7 +40932,7 @@ var index_esm = {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(20);
-module.exports = __webpack_require__(98);
+module.exports = __webpack_require__(99);
 
 
 /***/ }),
@@ -62440,11 +62440,11 @@ var _router = __webpack_require__(78);
 
 var _router2 = _interopRequireDefault(_router);
 
-var _http = __webpack_require__(94);
+var _http = __webpack_require__(95);
 
 var _http2 = _interopRequireDefault(_http);
 
-var _lang = __webpack_require__(96);
+var _lang = __webpack_require__(97);
 
 var _lang2 = _interopRequireDefault(_lang);
 
@@ -62635,27 +62635,27 @@ Object.defineProperty(exports, "__esModule", {
 });
 var AppHeader = exports.AppHeader = function AppHeader(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(99));
+    return r(__webpack_require__(100));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppFooter = exports.AppFooter = function AppFooter(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(100));
+    return r(__webpack_require__(101));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppSideBar = exports.AppSideBar = function AppSideBar(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(101));
+    return r(__webpack_require__(102));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppBreadcrumbs = exports.AppBreadcrumbs = function AppBreadcrumbs(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(102));
+    return r(__webpack_require__(103));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var AppNotifications = exports.AppNotifications = function AppNotifications(r) {
   return __webpack_require__.e/* require.ensure */(1).then((function () {
-    return r(__webpack_require__(103));
+    return r(__webpack_require__(104));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65702,7 +65702,7 @@ var _accounts = __webpack_require__(89);
 
 var _accounts2 = _interopRequireDefault(_accounts);
 
-var _appearance = __webpack_require__(91);
+var _appearance = __webpack_require__(92);
 
 var _appearance2 = _interopRequireDefault(_appearance);
 
@@ -65777,17 +65777,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var Index = exports.Index = function Index(r) {
   return __webpack_require__.e/* require.ensure */(4).then((function () {
-    return r(__webpack_require__(104));
+    return r(__webpack_require__(105));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Create = exports.Create = function Create(r) {
   return __webpack_require__.e/* require.ensure */(4).then((function () {
-    return r(__webpack_require__(105));
+    return r(__webpack_require__(106));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var View = exports.View = function View(r) {
   return __webpack_require__.e/* require.ensure */(4).then((function () {
-    return r(__webpack_require__(106));
+    return r(__webpack_require__(107));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65803,7 +65803,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 var Dashboard = function Dashboard(r) {
     return __webpack_require__.e/* require.ensure */(1).then((function () {
-        return r(__webpack_require__(107));
+        return r(__webpack_require__(108));
     }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 exports.default = [{
@@ -65906,17 +65906,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var Sites = exports.Sites = function Sites(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(108));
+    return r(__webpack_require__(109));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var SiteManager = exports.SiteManager = function SiteManager(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(109));
+    return r(__webpack_require__(110));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var SiteConfig = exports.SiteConfig = function SiteConfig(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(110));
+    return r(__webpack_require__(111));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65937,7 +65937,7 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var FileManager = exports.FileManager = function FileManager(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(111));
+    return r(__webpack_require__(112));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65958,7 +65958,7 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var SystemLogs = exports.SystemLogs = function SystemLogs(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(112));
+    return r(__webpack_require__(113));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -65979,12 +65979,12 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var Translations = exports.Translations = function Translations(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(113));
+    return r(__webpack_require__(114));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var TranslationManager = exports.TranslationManager = function TranslationManager(r) {
   return __webpack_require__.e/* require.ensure */(0).then((function () {
-    return r(__webpack_require__(114));
+    return r(__webpack_require__(115));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -66001,12 +66001,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _users = __webpack_require__(90);
 
-var _roles = __webpack_require__(223);
+var _roles = __webpack_require__(91);
 
 exports.default = [{
     name: 'accounts.index',
     path: '/accounts',
-    component: _users.AllUsers,
+    component: _users.Users,
     meta: { requiresAuth: true, permission: 'view_users', icon: 'person', menu: true },
     children: [
     /*
@@ -66015,28 +66015,18 @@ exports.default = [{
     {
         name: 'accounts.users.index',
         path: '/accounts',
-        component: _users.AllUsers,
+        component: _users.Users,
         meta: { requiresAuth: true, permission: 'view_users', menu: true }
     }, {
         name: 'accounts.users.create',
         path: '/accounts/create',
-        component: _users.CreateUsers,
+        component: _users.UserManager,
         meta: { requiresAuth: true, permission: 'create_users' }
     }, {
         name: 'accounts.users.edit',
         path: '/accounts/:id/edit',
-        component: _users.CreateUsers,
+        component: _users.UserManager,
         meta: { requiresAuth: true, permission: 'update_users' }
-    }, {
-        name: 'accounts.users.details',
-        path: '/accounts/:id/details',
-        component: _users.UserDetails,
-        meta: { requiresAuth: true, permission: 'update_users' }
-    }, {
-        name: 'accounts.users.roles',
-        path: '/accounts/:id/roles',
-        component: _users.UserRoles,
-        meta: { requiresAuth: true, permission: 'update_roles' }
     },
     /*
      * Roles Managements
@@ -66079,24 +66069,14 @@ Object.defineProperty(exports, "__esModule", {
  * http://router.vuejs.org/en/advanced/lazy-loading.html
  */
 /* eslint-disable global-require */
-var AllUsers = exports.AllUsers = function AllUsers(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(115));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var CreateUsers = exports.CreateUsers = function CreateUsers(r) {
+var Users = exports.Users = function Users(r) {
   return __webpack_require__.e/* require.ensure */(2).then((function () {
     return r(__webpack_require__(116));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
-var UserRoles = exports.UserRoles = function UserRoles(r) {
+var UserManager = exports.UserManager = function UserManager(r) {
   return __webpack_require__.e/* require.ensure */(2).then((function () {
     return r(__webpack_require__(117));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var UserDetails = exports.UserDetails = function UserDetails(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(118));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
@@ -66108,12 +66088,43 @@ var UserDetails = exports.UserDetails = function UserDetails(r) {
 
 
 Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * Components are lazy-loaded - See "Grouping Components in the Same Chunk"
+ * http://router.vuejs.org/en/advanced/lazy-loading.html
+ */
+/* eslint-disable global-require */
+var Roles = exports.Roles = function Roles(r) {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
+    return r(__webpack_require__(118));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var RoleManager = exports.RoleManager = function RoleManager(r) {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
+    return r(__webpack_require__(119));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var Permissions = exports.Permissions = function Permissions(r) {
+  return __webpack_require__.e/* require.ensure */(2).then((function () {
+    return r(__webpack_require__(120));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _menu = __webpack_require__(92);
+var _menu = __webpack_require__(93);
 
-var _banner = __webpack_require__(93);
+var _banner = __webpack_require__(94);
 
 exports.default = [{
     name: 'appearance.index',
@@ -66149,7 +66160,7 @@ exports.default = [{
 }];
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66165,17 +66176,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var AllMenus = exports.AllMenus = function AllMenus(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(119));
+    return r(__webpack_require__(121));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateMenu = exports.CreateMenu = function CreateMenu(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(120));
+    return r(__webpack_require__(122));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66191,17 +66202,17 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable global-require */
 var AllBanners = exports.AllBanners = function AllBanners(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(121));
+    return r(__webpack_require__(123));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var CreateBanner = exports.CreateBanner = function CreateBanner(r) {
   return __webpack_require__.e/* require.ensure */(3).then((function () {
-    return r(__webpack_require__(122));
+    return r(__webpack_require__(124));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66217,7 +66228,7 @@ var _axios = __webpack_require__(4);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _interceptors = __webpack_require__(95);
+var _interceptors = __webpack_require__(96);
 
 var _interceptors2 = _interopRequireDefault(_interceptors);
 
@@ -66253,7 +66264,7 @@ function install(Vue, _ref) {
 }
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66313,7 +66324,7 @@ exports.default = function (http, store, router) {
 };
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -66327,7 +66338,7 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueI18n = __webpack_require__(97);
+var _vueI18n = __webpack_require__(98);
 
 var _vueI18n2 = _interopRequireDefault(_vueI18n);
 
@@ -66360,7 +66371,7 @@ _axios2.default.get('/api/translations/groups/' + Zexus.lang.groups.join(',')).t
 exports.default = i18n;
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67906,165 +67917,10 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 99 */,
-/* 100 */,
-/* 101 */,
-/* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */,
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */,
-/* 137 */,
-/* 138 */,
-/* 139 */,
-/* 140 */,
-/* 141 */,
-/* 142 */,
-/* 143 */,
-/* 144 */,
-/* 145 */,
-/* 146 */,
-/* 147 */,
-/* 148 */,
-/* 149 */,
-/* 150 */,
-/* 151 */,
-/* 152 */,
-/* 153 */,
-/* 154 */,
-/* 155 */,
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */,
-/* 208 */,
-/* 209 */,
-/* 210 */,
-/* 211 */,
-/* 212 */,
-/* 213 */,
-/* 214 */,
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * Components are lazy-loaded - See "Grouping Components in the Same Chunk"
- * http://router.vuejs.org/en/advanced/lazy-loading.html
- */
-/* eslint-disable global-require */
-var Roles = exports.Roles = function Roles(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(224));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var RoleManager = exports.RoleManager = function RoleManager(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(225));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var Permissions = exports.Permissions = function Permissions(r) {
-  return __webpack_require__.e/* require.ensure */(2).then((function () {
-    return r(__webpack_require__(230));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
 
 /***/ })
 /******/ ]);

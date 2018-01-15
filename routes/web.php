@@ -12,7 +12,7 @@
 */
 
 
-use Zix\Core\Events\Seeder\AppPermissionsCreate;
+use Zix\Core\Events\Seeder\GetAppPermissions;
 
 Route::get('/', function () {
     return view('core::default.app');
@@ -30,7 +30,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('tester', '\Zix\Core\Http\Controllers\SiteController@index');
 Route::get('test', function () {
     $permissions = collect();
-    event(new AppPermissionsCreate($permissions));
+    event(new GetAppPermissions($permissions));
     return $permissions;
 
 //    \Zix\Core\Models\Site::create([

@@ -17,7 +17,7 @@ use Zix\Core\Events\Seeder\GetAppPermissions;
 Route::get('/', function () {
     return view('core::default.app');
 });
-
+//Route::get('/', 'HomeController@get');
 
 Route::get('admin', function () {
     return view('core::admin.app');
@@ -29,14 +29,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('tester', '\Zix\Core\Http\Controllers\SiteController@index');
 Route::get('test', function () {
-    $user = \App\User::first();
-
-    return $user->load('roles');
-    return $user->getAllPermissions()->pluck('name');
-    $permissions = collect();
-    event(new GetAppPermissions($permissions));
-    return $permissions;
-
+        $site = \Zix\Core\Models\Site::first()->load('configs');
+return $site;
 //    \Zix\Core\Models\Site::create([
 //        'name' => 'zixfinance',
 //        'url' => 'http://localhost:8030',
